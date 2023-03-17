@@ -1,0 +1,46 @@
+@import "./src/sass/base/mixins"
+
+
+.firstSection
+  margin-top: 110px
+  &__container
+    padding: 54px 0 20px
+    text-align: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    row-gap: 3px
+  &__h2
+    text-transform: uppercase
+    @include Gilroy
+    @include text36
+    margin-bottom: 15px
+  &__h3
+    @include Gilroy
+    @include text18
+  &__numbers
+    display: flex
+    justify-content: center
+    column-gap: 20px
+  &__card
+    min-width: 93px
+    padding: 9px 12px
+    @include bg1
+    text-align: center
+    &-numb
+      @include text24
+      text-transform: uppercase
+      @include Gilroy
+    &-p
+      @include text12
+      @include Gilroy
+
+
+
+
+
+
+
+
+
+

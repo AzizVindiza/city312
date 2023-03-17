@@ -1,0 +1,26 @@
+@import "src/sass/base/mixins.sass"
+.btn
+  padding: 14px 50px
+  min-width: 250px
+  @include bg1
+  &__text
+    @include text20
+    color: $color2C2C2C
+  &_transparent
+    background: $color0E0E0E
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      top: -2px
+      bottom: -2px
+      left: -2px
+      right: -2px
+      @include bg1
+      z-index: -1
+    .btn__text
+      background: linear-gradient(180deg, #FFE25A 0%, #FFA852 100%)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      background-clip: text
+      text-fill-color: transparent

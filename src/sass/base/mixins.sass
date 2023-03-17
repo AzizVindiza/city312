@@ -1,0 +1,56 @@
+
+//variables
+$color0F0F0F : #0F0F0F
+$color0E0E0E : #0E0E0E
+$colorFFF : #FFFFFF
+$color000 : #000000
+$color132836 : #132836
+$color2C2C2C : #2C2C2C
+
+@mixin text($f-weight,$f-size,$f-height,$f-color)
+  font-weight: $f-weight
+  font-size: $f-size
+  line-height: $f-height
+  color: $f-color
+//@include text(500,48px,45px,#fff)
+@mixin bg1
+  background: linear-gradient(180deg, #FFE25A 0%, #FFA852 100%)
+  box-shadow: 0 0 7.24361px rgba(0, 0, 0, 0.25)
+  border-radius: 9.65814px
+
+@mixin text16()
+  font-weight: 700
+  font-size: 16px
+  line-height: 19px
+  color: $colorFFF
+@mixin text36()
+  font-weight: 900
+  font-size: 36px
+  line-height: 45px
+  color: $color0E0E0E
+@mixin text18()
+  font-weight: 500
+  font-size: 18px
+  line-height: 22px
+  color: $color0E0E0E
+@mixin text24()
+  font-weight: 700
+  font-size: 24px
+  line-height: 29px
+  color: $color0E0E0E
+@mixin text12()
+  font-weight: 500
+  font-size: 12px
+  line-height: 14px
+  color: $color0E0E0E
+@mixin text20()
+  font-weight: 400
+  font-size: 20px
+  line-height: 23px
+  color: $colorFFF
+
+
+@mixin Exo
+  font-family: 'Exo 2', sans-serif
+@mixin Gilroy
+  font-family: 'Gilroy', sans-serif
