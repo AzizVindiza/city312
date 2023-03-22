@@ -1,0 +1,44 @@
+@import "./src/sass/base/mixins"
+.benefitsSection
+  &__container
+    padding: 50px 0
+  &__txt
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    row-gap: 20px
+    padding-bottom: 20px
+  &__cards
+    display: flex
+    justify-content: center
+    flex-direction: column
+    row-gap: 20px
+  &__card
+    background: #EBECF0
+    box-shadow: inset 0 2.60526px 3.47368px rgba(0, 0, 0, 0.25), inset -1.73684px -3.47368px 3.47368px #FFFFFF
+    padding: 10px 10px
+    border-radius: 8.68421px
+  &__content
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 10px 15px
+    background: #FFFFFF
+    box-shadow: inset 0 2.60526px 3.47368px rgba(0, 0, 0, 0.25), inset -1.73684px -3.47368px 3.47368px #FFFFFF
+  &__circle
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 72px
+    height: 72px
+    background: url("./circle.svg") center/cover no-repeat
+  &__h3
+    @include text15
+    @include Exo
+    text-transform: uppercase
+    color: $color838383
+  &__h4
+    @include text17
+    @include Exo
+    text-transform: uppercase

@@ -1,8 +1,11 @@
 @import "./src/sass/base/mixins"
 
-
+.highlight
+  @include text36
+  color: $colorF8A303
 .firstSection
-  margin-top: 110px
+  position: relative
+  margin-top: 100px
   &__container
     padding: 54px 0 20px
     text-align: center
@@ -12,11 +15,11 @@
     row-gap: 3px
   &__h2
     text-transform: uppercase
-    @include Gilroy
+
     @include text36
     margin-bottom: 15px
   &__h3
-    @include Gilroy
+
     @include text18
   &__numbers
     display: flex
@@ -30,11 +33,31 @@
     &-numb
       @include text24
       text-transform: uppercase
-      @include Gilroy
+
     &-p
       @include text12
-      @include Gilroy
+  &__bg1
+    position: absolute
+    top: -100px
+    right: 0
+    z-index: -1
+  &__bg2
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
 
+@media (min-width: 640px )
+  .firstSection
+    &__top
+      display: flex
+      justify-content: center
+      align-items: center
+@media (min-width: 768px )
+
+@media (min-width: 1024px)
+
+@media (min-width: 1440px)
 
 
 

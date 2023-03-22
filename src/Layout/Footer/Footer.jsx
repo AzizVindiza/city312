@@ -1,10 +1,12 @@
 import React from 'react';
-
+import "./Footer.sass"
 const Footer = () => {
     return (
-        <div>
-            
-        </div>
+        <footer className="footer">
+            <div className="container footer__container">
+                .footer__
+            </div>
+        </footer>
     );
 };
 

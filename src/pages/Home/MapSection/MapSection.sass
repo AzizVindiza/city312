@@ -1,0 +1,24 @@
+@import "src/sass/base/mixins"
+.map
+  &__container
+    padding: 25px 0 50px 0
+  iframe
+    width: 100%
+    height: 404px
+  &__title
+    padding: 25px 0 35px 0
+  &__text
+    display: flex
+    flex-direction: column
+    justify-content: center
+    row-gap: 30px
+  &__ul
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    flex-direction: column
+    row-gap: 7px
+  &__li
+    &_h
+      margin-bottom: 10px
+      @include text17

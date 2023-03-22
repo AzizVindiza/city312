@@ -36,14 +36,16 @@ const Header = () => {
         // }`}>
         <header className="header">
             <div className="header__container container ">
-                <NavLink className="header__logo" to='/'>
-                    <img src={logo} alt="
+                <h1 className="header__h1">
+                    <NavLink className="header__logo" to='/'>
+                        <img src={logo} alt="
                     Единая карта лояльности
                 "/>
-                </NavLink>
-                <h2 className="header__title">
-                    Единая карта лояльности
-                </h2>
+                    </NavLink>
+                    <span className="header__title">
+                        Единая карта лояльности
+                    </span>
+                </h1>
                 <HamburgerToggle toggleClass={toggleClass} isActiveHamburger={isActiveHamburger}/>
                 <nav className={`header__menu ${isActiveHamburger ? "header__menu_active" : null}`}>
                     <NavBar toggleClass={toggleClass}/>

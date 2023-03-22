@@ -1,0 +1,75 @@
+@import "./src/sass/base/mixins"
+.discount
+  box-shadow: 0 0 7.24361px rgba(0, 0, 0, 0.25)
+  border-radius: 13px
+  &__img
+    position: relative
+  &__overlay
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    margin: auto
+    padding: 9px
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    &-top
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+    &-bottom
+      display: flex
+    &-percent
+      padding: 3px 5px
+      background: $colorF8A303
+      border-radius: 17px
+      @include text12
+      font-weight: 600
+    &-h3
+      @include text12
+      font-weight: 600
+    &-h4
+      @include text9
+
+  &__company
+    padding: 2px 30px 2px 3px
+    background: $colorFFF
+    border-radius: 13px
+    display: flex
+    justify-content: center
+    align-items: center
+    column-gap: 9px
+
+  &__txt
+    padding: 7px
+    display: flex
+    flex-direction: column
+    row-gap: 9px
+
+  &__title
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__bottom
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__h3
+    @include text16
+    color: $color000
+    font-weight: 600
+  &__h4
+    @include text12
+    color: #00000040
+  &__p
+    @include text15
+    @include Exo
+    font-weight: 300
+  &__price
+    @include text17
+    color: $color0077FF
+
+
+

@@ -6,6 +6,9 @@ $colorFFF : #FFFFFF
 $color000 : #000000
 $color132836 : #132836
 $color2C2C2C : #2C2C2C
+$colorF8A303 : #F8A303
+$color838383 : #838383
+$color0077FF : #0077FF
 
 @mixin text($f-weight,$f-size,$f-height,$f-color)
   font-weight: $f-weight
@@ -17,12 +20,21 @@ $color2C2C2C : #2C2C2C
   background: linear-gradient(180deg, #FFE25A 0%, #FFA852 100%)
   box-shadow: 0 0 7.24361px rgba(0, 0, 0, 0.25)
   border-radius: 9.65814px
-
+@mixin text15()
+  font-weight: 600
+  font-size: 15px
+  line-height: 18px
+  color: $color2C2C2C
 @mixin text16()
   font-weight: 700
   font-size: 16px
   line-height: 19px
   color: $colorFFF
+@mixin text17()
+  font-weight: 700
+  font-size: 17px
+  line-height: 21px
+  color: $color2C2C2C
 @mixin text36()
   font-weight: 900
   font-size: 36px
@@ -43,6 +55,11 @@ $color2C2C2C : #2C2C2C
   font-size: 12px
   line-height: 14px
   color: $color0E0E0E
+@mixin text9()
+  font-weight: 500
+  font-size: 9px
+  line-height: 11px
+  color: $color000
 @mixin text20()
   font-weight: 400
   font-size: 20px
@@ -54,3 +71,15 @@ $color2C2C2C : #2C2C2C
   font-family: 'Exo 2', sans-serif
 @mixin Gilroy
   font-family: 'Gilroy', sans-serif
+@media (min-width: 640px )
+
+  @mixin text36()
+    font-weight: 900
+    font-size: 32px
+    line-height: 41px
+    color: $color0E0E0E
+@media (min-width: 768px )
+
+@media (min-width: 1024px)
+
+@media (min-width: 1440px)

@@ -21,7 +21,7 @@ const NavBar = ({toggleClass}) => {
                 </h2>
             </li>
             <li className="nav__item">
-                <a className="nav__link" href="#about">О нас</a>
+                <a className="nav__link" href="https://instagram.com">О нас</a>
             </li>
             <li className='nav__item'><NavLink className="nav__link" to="/" onClick={() => {
                 toggleClass()
@@ -29,8 +29,9 @@ const NavBar = ({toggleClass}) => {
             <li className='nav__item'><NavLink className="nav__link" to="/services" onClick={() => {
                 toggleClass()
             }}>Услуги</NavLink></li>
-            <Btn text={"ВХОД"} type={"button"} theme={""}/>
-            <Btn text={"РЕГИСТРАЦИЯ"} type={"button"} theme={"btn_transparent"}/>
+            <Btn text={"ВХОД"} type={"button"} theme={"transparent"}/>
+            <Btn text={"РЕГИСТРАЦИЯ"} type={"button"} />
+
             {/*<li className='nav__item'><NavLink className="nav__link" to="/reviews" onClick={() => {*/}
             {/*    toggleClass()*/}
             {/*}}>Отзывы</NavLink></li>*/}

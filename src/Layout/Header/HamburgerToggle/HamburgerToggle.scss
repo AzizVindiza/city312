@@ -38,17 +38,18 @@
     }
   }
 }
-@media (min-width: 1000px ) {
+@media (min-width: 640px ) {
+
+}
+
+@media (min-width: 768px ) {
   .hamburger{
     display: none;
   }
 }
 
-@media (min-width: 769px ) {
+@media (min-width: 1024px) {
 }
 
-@media (min-width: 1025px) {
-}
-
-@media (min-width: 1201px) {
+@media (min-width: 1440px) {
 }
