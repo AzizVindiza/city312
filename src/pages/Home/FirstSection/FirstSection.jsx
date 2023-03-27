@@ -1,7 +1,10 @@
 import React from 'react';
 import "./FirstSection.sass"
 import img from './FirstSection__img.png'
+import img640 from './FirstSection__img640.png'
 import bg1 from './FirstSection__bg1.png'
+import bg1640 from './FirstSection__bg1640.png'
+import bg2640 from './FirstSection__bg2640.png'
 import bg2 from './FirstSection__bg2.png'
 
 const FirstSection = () => {
@@ -21,7 +24,10 @@ const FirstSection = () => {
                         </h3>
                     </div>
                     <div className="firstSection__img">
-                        <img src={img} alt="312 card"/>
+                        <picture>
+                            <source media="(min-width:640px)" srcSet={img640}/>
+                            <img src={img} alt="312 card"/>
+                        </picture>
                     </div>
                 </div>
                 <div className="firstSection__numbers">
@@ -41,11 +47,20 @@ const FirstSection = () => {
                     </div>
                 </div>
                 <div className="firstSection__bg1">
-                    <img src={bg1} alt="bg"/>
+                    <picture>
+                        <source media="(min-width:640px)" srcSet={bg1640}/>
+                        <img src={bg1} alt="bg"/>
+                    </picture>
+
                 </div>
                 <div className="firstSection__bg2">
-                    <img src={bg2} alt=""/>
+                    <picture>
+                        <source media="(min-width:640px)" srcSet={bg2640}/>
+                        <img src={bg2} alt="bg"/>
+                    </picture>
+
                 </div>
+
             </div>
         </section>
     );

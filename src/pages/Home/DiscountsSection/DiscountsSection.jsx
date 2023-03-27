@@ -6,11 +6,15 @@ import img4 from "./4.png"
 import img3 from "./3.png"
 import img2 from "./2.png"
 import img1 from "./1.png"
+import Line from "../../../components/Line/Line";
 const DiscountsSection = () => {
     return (
         <section className="discountsSection">
+                    <h2 className="discountsSection__title title">
+                        Основные виды скидки
+                        <Line/>
+                    </h2>
             <div className="container discountsSection__container">
-
                 <div className="discountsSection__card">
                     <h2 className="discountsSection__h2">Основные виды скидки</h2>
                     <div className="discountsSection__img">
@@ -64,7 +68,6 @@ const DiscountsSection = () => {
                         обменять на товар или услугу
                     </p>
                 </div>
-
             </div>
         </section>
     );

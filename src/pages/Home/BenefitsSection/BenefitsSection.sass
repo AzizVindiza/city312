@@ -42,3 +42,37 @@
     @include text17
     @include Exo
     text-transform: uppercase
+@media (min-width: 640px)
+  .benefitsSection
+    &__container
+      display: flex
+      flex-direction: row-reverse
+      column-gap: 44px
+      align-items: flex-start
+    &__cards
+      row-gap: 0
+    &__card:last-child
+      position: relative
+      left: 25px
+      top: 0
+    &__txt
+      align-items: flex-start
+      .p
+        text-align: left
+    &__card
+      padding: 2px 2px
+      min-width: 226px
+    //&__p
+    //  width: 524px - 256px
+    &__circle
+      width: 49px
+      height: 49px
+      font-size: 10px
+      line-height: 12px
+
+
+@media (min-width: 768px)
+
+@media (min-width: 1024px)
+
+@media (min-width: 1440px)

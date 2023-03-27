@@ -2,17 +2,21 @@
 .howItWorkSection
   position: relative
   &__cards
-    padding: 50px 0
+    padding: 50px 0 10px 0
     display: flex
     flex-direction: column
     align-items: flex-start
-    row-gap: 40px
   &__card
     display: flex
     align-items: center
     column-gap: 20px
+    margin-bottom: 40px
   &__icon
     width: 60px
+    height: 60px
+    svg
+      width: 100%
+      height: 100%
   &__txt
     margin-left: 20px
   &__row
@@ -23,6 +27,8 @@
     row-gap: 20px
     padding: 50px 0
     position: relative
+  &__top
+    text-align: center
   &__img
     margin-top: 178px
   &__link
@@ -41,6 +47,38 @@
   &__h4
     @include text15
     text-transform: uppercase
+
+@media (min-width: 640px)
+  .howItWorkSection
+    &__icon
+      width: 50px
+      height: 40px
+    &__cards
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+    &__card
+      column-gap: 0
+      margin-bottom: 20px
+    &__hand
+      bottom: 60px
+    &__row
+      flex-direction: row
+      justify-content: space-between
+      padding: 0
+
+    &__top
+      max-width: 310px
+    &__p
+      font-size: 12px
+      line-height: 14px
+      text-align: left
+      margin-top: 11px
+@media (min-width: 768px)
+
+@media (min-width: 1024px)
+
+@media (min-width: 1440px)
 
 
 
