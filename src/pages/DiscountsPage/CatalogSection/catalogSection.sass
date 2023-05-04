@@ -1,0 +1,24 @@
+@import "src/sass/base/mixins"
+.catalogSection
+  &__container
+    padding: 33px 0 12px 0
+  &__h2
+    @include Exo
+    @include text(500,13px,16px,#212121)
+  &__block
+    width: 137px
+    background: linear-gradient(180deg, #FFE25A 0%, #FFA852 100%)
+    border-radius: 7.5px
+    display: flex
+    align-items: center
+    column-gap: 12px
+    padding: 10px
+  &__burger
+    display: flex
+    flex-direction: column-reverse
+    row-gap: 3px
+  &__line
+    width: 18px
+    height: 2px
+    background: #212121
+
