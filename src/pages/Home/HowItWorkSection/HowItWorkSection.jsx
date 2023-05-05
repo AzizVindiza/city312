@@ -2,15 +2,15 @@ import React from 'react';
 import "./HowItWorkSection.sass"
 import img from './howItWorkSection__img.png'
 import img640 from './howItWorkSection__img640.png'
+import img1440 from './howItWorkSection__img1440.png'
 import hand from './howItWorkSection__hand.png'
-import hand640 from './howItWorkSection__hand640.png'
 import Btn from "../../../components/Btn/Btn";
 import Line from "../../../components/Line/Line";
 const HowItWorkSection = () => {
     return (
         <div className="howItWorkSection">
-            <div className="container howItWorkSection__container">
-                <div className="howItWorkSection__cards">
+            <div className=" howItWorkSection__container">
+                <div className="howItWorkSection__cards container">
                     <div className="howItWorkSection__col">
                         <div className="howItWorkSection__card">
                             <div className="howItWorkSection__icon">
@@ -78,7 +78,7 @@ const HowItWorkSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="howItWorkSection__row">
+                <div className="howItWorkSection__row container">
                     <div className="howItWorkSection__top">
                         <h2 className="howItWorkSection__title title">
                             Как это работает?
@@ -89,11 +89,15 @@ const HowItWorkSection = () => {
                             повышая покупатель-
                             ский спрос на услуги и товары продавца.
                         </p>
+                        <a href="https://instagram.com" className="howItWorkSection__link640">
+                            <Btn text="оформить карту" type={"button"} />
+                        </a>
                     </div>
 
                     <div className="howItWorkSection__img">
                         <picture>
-                            <source media="(min-width:465px)" srcSet={img640}/>
+                            <source media="(min-width:1440px)" srcSet={img1440}/>
+                            <source media="(min-width:640px)" srcSet={img640}/>
                             <img src={img} alt="скидки"/>
                         </picture>
                     </div>
@@ -103,10 +107,7 @@ const HowItWorkSection = () => {
                     </a>
                 </div>
                 <div className="howItWorkSection__hand">
-                    <picture>
-                        <source media="(min-width:465px)" srcSet={hand640}/>
                         <img src={hand} alt="скидки"/>
-                    </picture>
                 </div>
             </div>
         </div>

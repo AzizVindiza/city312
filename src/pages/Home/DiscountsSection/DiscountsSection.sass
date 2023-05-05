@@ -1,5 +1,6 @@
-@import "./src/sass/base/mixins"
+@import "src/sass/base/mixins"
 .discountsSection
+  padding: 50px 0
   &__container
     padding: 50px 0
     display: flex
@@ -16,7 +17,6 @@
     flex-direction: column
     row-gap: 12px
     text-align: center
-
   &__h2
     @include text17
     text-transform: uppercase
@@ -34,3 +34,17 @@
       flex-direction: row
       flex-wrap: wrap
       justify-content: space-between
+
+@media (min-width: 768px)
+
+@media (min-width: 1024px)
+  .discountsSection
+    &__card
+      width: 250px
+      height: 300px
+
+@media (min-width: 1440px)
+  .discountsSection
+    &__card
+      width: 350px
+      height: 350px

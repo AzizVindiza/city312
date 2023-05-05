@@ -27,6 +27,9 @@
     row-gap: 20px
     padding: 50px 0
     position: relative
+
+    max-width: 90%
+
   &__top
     text-align: center
   &__img
@@ -48,9 +51,15 @@
   &__h4
     @include text15
     text-transform: uppercase
-
+  &__link640
+    display: none
+    margin-top: 20px
 @media (min-width: 640px)
   .howItWorkSection
+    &__img
+      margin-top: 0
+    &__row
+      margin: 0 0 0 auto
     &__icon
       width: 50px
       height: 40px
@@ -62,19 +71,23 @@
       column-gap: 0
       margin-bottom: 20px
     &__hand
-      bottom: 60px
+      display: none
     &__row
       flex-direction: row
       justify-content: space-between
       padding: 0
 
     &__top
-      max-width: 310px
+      max-width: 40%
     &__p
       font-size: 12px
       line-height: 14px
       text-align: left
       margin-top: 11px
+    &__link
+      display: none
+    &__link640
+      display: inline-block
 @media (min-width: 768px)
 
 
