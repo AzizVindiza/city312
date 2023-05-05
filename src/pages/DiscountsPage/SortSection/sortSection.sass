@@ -1,0 +1,28 @@
+@import "src/sass/base/mixins"
+.sortSection
+  &__container
+    padding: 16px 0 30px 0
+  &__block
+    position: relative
+    background: #FBFBFB
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15)
+    border-radius: 15px 15px 0 0
+    padding: 16px 10px
+    display: flex
+    justify-content: space-between
+  &__h2
+    @include Gilroy
+    @include text(400,16px,19px, #000000)
+  &__ul
+    width: 333px
+    z-index: 2
+    position: absolute
+    display: flex
+    row-gap: 15px
+    flex-direction: column
+    background: #FBFBFB
+    padding: 9px 0 18px 29px
+    border-radius: 0 0 15px 15px
+
+
+
