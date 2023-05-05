@@ -1,7 +1,10 @@
-@import "./src/sass/base/mixins"
+@import "src/sass/base/mixins"
 .benefitsSection
+  background: #EBECF0
+
   &__container
     padding: 50px 0
+
   &__txt
     display: flex
     justify-content: center
@@ -9,23 +12,27 @@
     flex-direction: column
     row-gap: 20px
     padding-bottom: 20px
+
   &__cards
     display: flex
     justify-content: center
     flex-direction: column
     row-gap: 20px
+
   &__card
     background: #EBECF0
     box-shadow: inset 0 2.60526px 3.47368px rgba(0, 0, 0, 0.25), inset -1.73684px -3.47368px 3.47368px #FFFFFF
     padding: 10px 10px
     border-radius: 8.68421px
+
   &__content
     display: flex
     align-items: center
     justify-content: space-between
     padding: 10px 15px
-    background: #FFFFFF
+    background: #EBECF0
     box-shadow: inset 0 2.60526px 3.47368px rgba(0, 0, 0, 0.25), inset -1.73684px -3.47368px 3.47368px #FFFFFF
+
   &__circle
     display: flex
     align-items: center
@@ -33,15 +40,18 @@
     width: 72px
     height: 72px
     background: url("./circle.svg") center/cover no-repeat
+
   &__h3
     @include text15
     @include Exo
     text-transform: uppercase
     color: $color838383
+
   &__h4
     @include text17
     @include Exo
     text-transform: uppercase
+
 @media (min-width: 640px)
   .benefitsSection
     &__container
@@ -49,16 +59,21 @@
       flex-direction: row-reverse
       column-gap: 44px
       align-items: flex-start
+
     &__cards
       row-gap: 0
+
     &__card:last-child
       position: relative
       left: 25px
       top: 0
+
     &__txt
       align-items: flex-start
+
       .p
         text-align: left
+
     &__card
       padding: 2px 2px
       min-width: 226px
@@ -72,7 +87,41 @@
 
 
 @media (min-width: 768px)
+  .benefitsSection
+    &__p
+      @include text(400,14px,16px, #2C2C2C)
+    &__txt
+      width: 50%
+    &__circle
+      @include text(400,14px,16px, #2C2C2C)
+      width: 60px
+      height: 60px
+    &__h4
+      @include text(700,14px,17px, #2C2C2C)
+
 
 @media (min-width: 1024px)
+  .benefitsSection
+    &__p
+      @include text(400,16px,19px, #2C2C2C)
+    &__txt
+      width: 50%
+    &__circle
+      @include text(400,16px,20px, #2C2C2C)
+      width: 80px
+      height: 80px
+    &__h4
+      @include text(700,20px,24px, #2C2C2C)
 
 @media (min-width: 1440px)
+  .benefitsSection
+    &__p
+      @include text(400,18px,21px, #2C2C2C)
+    &__txt
+      width: 50%
+    &__circle
+      @include text(700,25px,30px, #000000)
+      width: 121px
+      height: 121px
+    &__h4
+      @include text(700,28px,34px, #2C2C2C)
