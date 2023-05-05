@@ -1,5 +1,11 @@
 @import "src/sass/base/mixins"
 .cartSection
+  &__h2
+    @include Gilroy
+    margin-bottom: 32px
+    text-transform: uppercase
+    text-align: center
+    @include text(600,24px,29px,#000000)
   &__container
     padding: 30px 0 70px 0
   &__wrapper
@@ -10,5 +16,22 @@
     margin-top: 30px
     display: flex
     justify-content: center
+@media (min-width: 640px)
+  .cartSection
+
+    &__wrapper
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      column-gap: 15px
+
+
+@media (min-width: 768px)
+
+@media (min-width: 1024px)
+
+@media (min-width: 1440px)
+
+
 
 

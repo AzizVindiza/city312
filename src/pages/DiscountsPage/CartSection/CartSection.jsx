@@ -8,7 +8,9 @@ const CartSection = () => {
     return (
         <div className={'cartSection'}>
             <div className="container cartSection__container">
+                <h2 className="cartSection__h2">Все скидки </h2>
                 <div className="cartSection__wrapper">
+                    <DiscountCard/>
                     <DiscountCard/>
                     <DiscountCard/>
                     <DiscountCard/>

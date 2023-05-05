@@ -1,0 +1,38 @@
+.discountswiper
+  display: none
+  .swiper
+    width: 100%
+    height: 100%
+  .swiper-slide
+    text-align: center
+  // Center slide text vertically
+  //  display: flex
+  //  justify-content: center
+  //  align-items: center
+  .swiper-slide img
+    display: block
+    width: 100%
+    height: 100%
+    object-fit: cover
+@media (min-width: 640px)
+  .discountswiper
+    position: relative
+    display: block
+    &__next
+      position: absolute
+      right: 40px
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 50
+    &__prev
+      position: absolute
+      left: 40px
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 50
+
+@media (min-width: 768px)
+
+@media (min-width: 1024px)
+
+@media (min-width: 1440px)

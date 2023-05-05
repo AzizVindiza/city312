@@ -1,7 +1,8 @@
 @import "src/sass/base/mixins"
+
 .catalogSection
-  &__container
-    padding: 33px 0 12px 0
+  margin-bottom: 21px
+
   &__h2
     @include Exo
     @include text(500,13px,16px,#212121)
@@ -13,6 +14,7 @@
     align-items: center
     column-gap: 12px
     padding: 10px
+    margin-bottom: 21px
   &__burger
     display: flex
     flex-direction: column-reverse
@@ -21,4 +23,15 @@
     width: 18px
     height: 2px
     background: #212121
+
+@media (min-width: 640px)
+  .catalogSection
+    margin-bottom: 0
+
+
+@media (min-width: 768px)
+
+@media (min-width: 1024px)
+
+@media (min-width: 1440px)
 
