@@ -28,7 +28,7 @@ const SwiperSecond = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="swiperSecond__img">
-                        <img src={picture} alt="" className="swiperSecond__"/>
+                        <img src={picture} alt="" className="swiperSecond__pic"/>
                     </div>
                 </SwiperSlide>
             </Swiper>

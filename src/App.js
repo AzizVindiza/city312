@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound/NotFound";
 import Layout from "./Layout/Layout";
 import Home from "./pages/Home/Home";
 import DiscountsPage from "./pages/DiscountsPage/DiscountsPage";
+import AfishaPage from "./pages/AfishaPage/AfishaPage";
 
 
 const router = createBrowserRouter(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
             <Route index element={<Home/>}/>
             <Route path="*" element={<NotFound/>}/>
             <Route path="discount" element={<DiscountsPage/>}/>
+            <Route path="afisha" element={<AfishaPage/>}/>
         </Route>
     )
 );
