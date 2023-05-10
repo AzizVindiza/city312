@@ -1,55 +1,73 @@
 @import "src/sass/base/mixins"
 .footer
   background: #0E0E0E
+
+  &__content
+    display: none
+
   &__container
     padding: 10px 0 27px 0
+
   &__logo
     width: 143px
     height: 132px
     margin: 0 auto 21px auto
+
   &__h1
     @include Exo
-    @include text(700,21px,25px,#D5D5D5)
+    @include text(700, 21px, 25px, #D5D5D5)
     text-align: center
     text-transform: uppercase
     margin-bottom: 40px
+
   &__ul
     display: flex
     flex-direction: column
     row-gap: 21px
     margin-bottom: 31px
     align-items: center
+
   &__item
     @include Gilroy
-    @include text(400,14px,16px,#D5D5D5)
+    @include text(400, 14px, 16px, #D5D5D5)
+
   &__block
     display: flex
-    row-gap: 21px
     margin-bottom: 30px
     flex-direction: column
     align-items: center
-  &__contact ,&__address
+
+  &__contact, &__address
     @include Gilroy
-    @include text(700,20px,24px,#D5D5D5)
+    @include text(700, 20px, 24px, #D5D5D5)
+
   &__num, &__street
     @include Gilroy
-    @include text(400,14px,16px, #D5D5D5)
+    @include text(400, 14px, 16px, #D5D5D5)
+
   &__in, &__reg
+    text-align: center
     @include Gilroy
-    @include text(700,16px,19px,#D5D5D5)
+    @include text(700, 16px, 19px, #D5D5D5)
+    text-transform: uppercase
+
   &__pay
+    text-align: center
     @include Gilroy
-    @include text(400,21px,25px,#D5D5D5)
+    @include text(400, 21px, 25px, #D5D5D5)
     margin: 15px 0 31px 0
+    text-transform: uppercase
+
   &__come
     display: flex
-    align-items: center
     justify-content: center
     flex-direction: column
+
   &__socials
     display: flex
     justify-content: center
     column-gap: 16px
+
   &__instagram
     background: #F00073
     border-radius: 39.0412px
@@ -58,14 +76,16 @@
     display: flex
     align-items: center
     justify-content: center
+
   &__facebook
-    background:  #1877F2
+    background: #1877F2
     border-radius: 39.0412px
     width: 53px
     height: 53px
     display: flex
     align-items: center
     justify-content: center
+
   &__whats
     background: #25D366
     border-radius: 39.0412px
@@ -74,3 +94,221 @@
     display: flex
     align-items: center
     justify-content: center
+  svg
+    width: 27px
+    height: 27px
+
+@media (min-width: 640px)
+  .footer
+    &__container
+      padding: 20px 0 21px 0
+
+    &__wrapper
+      display: none
+
+    &__content
+      display: flex
+      justify-content: space-between
+
+    &__logo
+      width: 58px
+      height: 58px
+      margin: 0 auto 0 auto
+
+    &__h1
+      @include text(700, 9px, 11px, #D5D5D5)
+      width: 95px
+
+    &__item
+      @include text(400, 10px, 12px, #D5D5D5)
+
+    &__contact, &__address
+      @include text(700, 10px, 12px, #D5D5D5)
+
+    &__street, &__num
+      @include text(400, 10px, 12px, #D5D5D5)
+
+    &__in, &__reg
+      @include text(700, 10px, 12px, #D5D5D5)
+      margin-bottom: 6px
+      text-align: left
+
+    &__pay
+      @include text(400, 6px, 8px, #D5D5D5)
+      text-align: left
+
+    &__ul
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      row-gap: 7px
+
+    &__block
+      margin: 0
+      align-items: flex-start
+
+    &__contact
+      margin-bottom: 7px
+
+    &__address
+      margin: 13px 0 4px 0
+
+    &__socials
+      display: none
+
+
+@media (min-width: 768px)
+  .footer
+    &__container
+      padding: 40px 0 40px 0
+
+    &__socials
+      display: flex
+      flex-direction: column
+      row-gap: 5px
+      align-self: flex-start
+
+    &__instagram
+      background: #F00073
+      border-radius: 39.0412px
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 28px
+      height: 28px
+    &__facebook
+      background: #1877F2
+      border-radius: 39.0412px
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 28px
+      height: 28px
+    &__whats
+      background: #25D366
+      border-radius: 39.0412px
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 28px
+      height: 28px
+    &__facebook
+      background: #1877F2
+      border-radius: 39.0412px
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 28px
+      height: 28px
+    svg
+      width: 15px
+      height: 15px
+
+
+@media (min-width: 1024px)
+  .footer
+    &__container
+      padding: 33px 0 33px 0
+    &__content
+      display: flex
+      column-gap: 31px
+    &__box
+      &_first
+        display: flex
+        column-gap: 10px
+    &__h1
+      align-self: center
+      text-align: left
+    &__h1
+      @include text(700, 9px, 11px, #D5D5D5)
+      width: 95px
+
+    &__item
+      @include text(400, 14px, 16px, #D5D5D5)
+
+    &__contact, &__address
+      @include text(700, 10px, 12px, #D5D5D5)
+
+    &__street, &__num
+      @include text(400, 10px, 12px, #D5D5D5)
+
+    &__in, &__reg
+      @include text(700, 14px, 17px, #D5D5D5)
+      margin-bottom: 6px
+      text-align: left
+
+    &__pay
+      @include text(400, 6px, 8px, #D5D5D5)
+      text-align: left
+
+@media (min-width: 1440px)
+  .footer
+    &__container
+      padding: 40px 0 40px 0
+    &__logo
+      width: 90px
+      height: 90px
+    &__h1
+      @include text(700, 15px, 19px, #D5D5D5)
+      width: 168px
+
+    &__item
+      @include text(400, 14px, 16px, #D5D5D5)
+
+    &__contact, &__address
+      @include text(700, 10px, 12px, #D5D5D5)
+
+    &__street, &__num
+      @include text(400, 10px, 12px, #D5D5D5)
+
+    &__in, &__reg
+      @include text(700, 14px, 17px, #D5D5D5)
+      margin-bottom: 6px
+      text-align: left
+
+    &__pay
+      @include text(400, 14px, 16px, #D5D5D5)
+
+
+    &__socials
+      display: flex
+      column-gap: 10px
+      flex-direction: row
+    &__come
+      flex-direction: row
+      column-gap: 30px
+
+    &__instagram
+        background: #F00073
+        border-radius: 39.0412px
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 50px
+        height: 50px
+    &__whats
+      background: #25D366
+      border-radius: 39.0412px
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 50px
+      height: 50px
+    &__facebook
+      background: #1877F2
+      border-radius: 39.0412px
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 50px
+      height: 50px
+    svg
+      width: 26px
+      height: 26px
+
+
+
+
+
+
+
