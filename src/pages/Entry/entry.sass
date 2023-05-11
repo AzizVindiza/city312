@@ -1,0 +1,349 @@
+@import "src/sass/base/mixins"
+.entry
+  background: #000000
+  padding: 40px 0
+  &__h2
+
+    @include text(600,18px,22px,#ffffff)
+    text-align: center
+    margin-bottom: 23px
+  &__form
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  &__input
+    width: 285px
+    height: 35px
+    border-radius: 7px
+    padding: 10px 12px
+    background: #fff
+  &__span
+    margin-bottom: 10px
+    @include text(400,14px,15px,rgba(255, 255, 255, 0.7))
+
+  &__span-2
+    margin: 10px 0 10px 0
+    @include text(400,14px,15px,rgba(255, 255, 255, 0.7))
+
+  &__label
+    display: flex
+    flex-direction: column
+    @include text(400,14px,15px,rgba(255, 255, 255, 0.7))
+
+  &__btn
+    background: linear-gradient(180deg, #FFE25A 0%, #FFA852 100%)
+    border-radius: 3.90991px
+    width: 229.12px
+    height: 38.32px
+    @include text(500,14px,15px,#000)
+    margin-top: 23px
+  &__line
+    width: 108px
+    background: #FFFFFF
+    height: 2px
+  &__h3
+    @include text(500,10px,15px,#B9B9B9)
+  &__wrapper
+    display: flex
+    align-items: center
+    column-gap: 11px
+    justify-content: center
+    margin: 40px 0 31px 0
+  &__google
+    width: 52px
+    height: 53px
+    background: #fff
+    border-radius: 50%
+    margin: 0 auto 10px auto
+  &__link
+    text-align: center
+    @include text(500,10px,15px,#B9B9B9)
+  &__first
+    display: none
+  &__left
+    display: none
+
+
+
+
+
+
+@media (min-width: 640px)
+
+ .entry
+   background: #000000
+   padding: 100px 0
+   &__h2
+    @include text(600,24px,29px,#ffffff)
+    text-align: center
+    margin-bottom: 23px
+   &__form
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+   &__input
+    width: 365px
+    height: 45px
+    border-radius: 7px
+    padding: 10px 12px
+    background: #fff
+   &__span
+    margin-bottom: 10px
+   &__span-2
+    margin: 10px 0 10px 0
+   &__label
+    display: flex
+    flex-direction: column
+    @include text(400,14px,15px,rgba(255, 255, 255, 0.7))
+
+   &__btn
+    background: linear-gradient(180deg, #FFE25A 0%, #FFA852 100%)
+    border-radius: 3.90991px
+    width: 293.12px
+    height: 49.32px
+    @include text(500,14px,15px,#000)
+    margin-top: 23px
+   &__line
+    width: 139px
+    background: #FFFFFF
+    height: 2px
+   &__h3
+    @include text(500,10px,15px,#B9B9B9)
+   &__wrapper
+    display: flex
+    align-items: center
+    column-gap: 11px
+    justify-content: center
+    margin: 40px 0 31px 0
+   &__google
+    width: 67px
+    height: 67px
+    background: #fff
+    border-radius: 50%
+    margin: 0 auto 10px auto
+   &__link
+    text-align: center
+    @include text(500,14px,19px,#B9B9B9)
+   &__picture
+     display: none
+   &__first
+     display: none
+
+
+@media (min-width: 768px)
+ .entry
+   background: #000000
+   padding: 140px 0
+   position: relative
+   &__h2
+     @include text(600,24px,29px,#ffffff)
+     text-align: center
+     margin-bottom: 23px
+   &__form
+     display: flex
+     flex-direction: column
+     justify-content: center
+     align-items: center
+   &__input
+     width: 285px
+     height: 35px
+     border-radius: 7px
+     padding: 10px 12px
+     background: #fff
+   &__span
+     margin-bottom: 10px
+   &__span-2
+     margin: 10px 0 10px 0
+   &__label
+     display: flex
+     flex-direction: column
+     @include text(400,14px,15px,rgba(255, 255, 255, 0.7))
+
+   &__btn
+     background: linear-gradient(180deg, #FFE25A 0%, #FFA852 100%)
+     border-radius: 3.90991px
+     width: 229.12px
+     height: 38.32px
+     @include text(500,14px,15px,#000)
+     margin-top: 23px
+   &__line
+     width: 108px
+     background: #FFFFFF
+     height: 2px
+   &__h3
+
+    @include text(500,10px,15px,#B9B9B9)
+   &__wrapper
+     display: flex
+     align-items: center
+     column-gap: 11px
+     justify-content: center
+     margin: 40px 0 31px 0
+   &__google
+     width: 52px
+     height: 53px
+     background: #fff
+     border-radius: 50%
+     margin: 0 auto 10px auto
+   &__link
+     text-align: center
+     @include text(500,10px,15px,#B9B9B9)
+   &__first
+     display: block
+     width: 150px
+     height: 100px
+     position: absolute
+     left: 0
+     top: 0
+   &__picture
+     display: block
+
+
+
+
+
+@media (min-width: 1024px)
+ .entry
+  background: #000000
+  padding: 0 0
+  &__container
+    display: flex
+    align-items: center
+    column-gap: 10px
+  &__h2
+    @include text(600,24px,29px,#ffffff)
+    text-align: center
+    margin-bottom: 23px
+  &__form
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  &__input
+    width: 285px
+    height: 35px
+    border-radius: 7px
+    padding: 10px 12px
+    background: #fff
+  &__span
+    margin-bottom: 10px
+  &__span-2
+    margin: 10px 0 10px 0
+  &__label
+    display: flex
+    flex-direction: column
+    @include text(400,14px,15px,rgba(255, 255, 255, 0.7))
+
+  &__btn
+    background: linear-gradient(180deg, #FFE25A 0%, #FFA852 100%)
+    border-radius: 3.90991px
+    width: 229.12px
+    height: 38.32px
+    @include text(500,14px,15px,#000)
+    margin-top: 23px
+  &__line
+    width: 108px
+    background: #FFFFFF
+    height: 2px
+  &__h3
+    @include text(500,10px,15px,#B9B9B9)
+  &__wrapper
+    display: flex
+    align-items: center
+    column-gap: 11px
+    justify-content: center
+    margin: 40px 0 31px 0
+  &__google
+    width: 52px
+    height: 53px
+    background: #fff
+    border-radius: 50%
+    margin: 0 auto 10px auto
+  &__link
+    text-align: center
+    @include text(500,10px,15px,#B9B9B9)
+  &__picture
+      display: none
+  &__left
+    display: block
+    position: relative
+  &__image-2
+    position: absolute
+    left: 20px
+    bottom: 98px
+    width: 400px
+    height: 600px
+
+
+
+
+
+@media (min-width: 1440px)
+ .entry
+  background: #000000
+  padding: 115px 0
+  &__h2
+    @include text(600,24px,29px,#ffffff)
+    text-align: center
+    margin-bottom: 23px
+  &__form
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+  &__input
+    width: 285px
+    height: 35px
+    border-radius: 7px
+    padding: 10px 12px
+    background: #fff
+  &__span
+    margin-bottom: 10px
+  &__span-2
+    margin: 10px 0 10px 0
+  &__label
+    display: flex
+    flex-direction: column
+    @include text(400,14px,15px,rgba(255, 255, 255, 0.7))
+
+  &__btn
+    background: linear-gradient(180deg, #FFE25A 0%, #FFA852 100%)
+    border-radius: 3.90991px
+    width: 229.12px
+    height: 38.32px
+    @include text(500,14px,15px,#000)
+    margin-top: 23px
+  &__line
+    width: 108px
+    background: #FFFFFF
+    height: 2px
+  &__h3
+    @include text(500,10px,15px,#B9B9B9)
+  &__wrapper
+    display: flex
+    align-items: center
+    column-gap: 11px
+    justify-content: center
+    margin: 40px 0 31px 0
+  &__google
+    width: 52px
+    height: 53px
+    background: #fff
+    border-radius: 50%
+    margin: 0 auto 10px auto
+  &__link
+    text-align: center
+    @include text(500,10px,15px,#B9B9B9)
+  &__picture
+      display: none
+  &__left
+    display: block
+
+  &__container
+    display: flex
+    column-gap: 160px
+
+

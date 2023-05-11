@@ -1,60 +1,105 @@
 @import "src/sass/base/mixins"
 .popUp
- &__wrapper
-  position: relative
-  display: flex
-  justify-content: space-between
+  &__wrapper
+    position: relative
+    display: flex
+    justify-content: space-between
 
- &__h2
-  @include text(600,18px,21px,#2F2F2F)
-  align-self: center
- &__catalog
-  cursor: pointer
- &__popUp
+  &__list-second
+    display: none
 
-  z-index: 10
-  background: #ffffff
-  padding: 19px 0 36px 0
-  width: 100%
-  position: absolute
-  display: flex
-  justify-content: center
-  left: 0
- &__list
-  display: flex
-  flex-direction: column
-  row-gap: 40px
- &__close
-  position: absolute
-  left: 30px
-  top: 30px
- &__item
-  @include text(500,16px,19px,#464646)
+  &__h2
+    @include text(600, 18px, 21px, #2F2F2F)
+    align-self: center
 
+  &__catalog
+    cursor: pointer
 
+  &__popUp
 
+    z-index: 10
+    background: #ffffff
+    padding: 19px 0 36px 0
+    width: 100%
+    position: absolute
+    display: flex
+    justify-content: center
+    left: 0
 
+  &__list
+    display: flex
+    flex-direction: column
+    row-gap: 40px
 
+  &__close
+    position: absolute
+    left: 30px
+    top: 30px
 
-
-
-
-
-
-
-
-
-
-
-
+  &__item
+    @include text(500, 16px, 19px, #464646)
 
 
 @media (min-width: 640px)
 
-
 @media (min-width: 768px)
+  .popUp
+    &__popUp
+      display: none
+    &__wrapper
+     align-items: center
+    &__catalog
+      display: none
+
+    &__list-second
+      display: flex
+      column-gap: 26px
+      margin-left: 50px
+
+    &__item
+      @include text(500, 14px, 16px, #464646)
+
 
 @media (min-width: 1024px)
+ .popUp
+  &__popUp
+     display: none
+  &__wrapper
+     align-items: center
+  &__catalog
+    display: none
+  &__list-second
+    display: flex
+    column-gap: 60px
+    margin-left: 50px
+  &__item
+    @include text(500, 14px, 16px, #464646)
+  &__h2
+    @include text(600, 21px, 25px, #2F2F2F)
+
+
+
 
 @media (min-width: 1440px)
+ .popUp
+   &__popUp
+     display: none
+   &__wrapper
+    justify-content: space-between
+    align-items: center
+   &__catalog
+    display: none
+   &__list-second
+    display: flex
+    column-gap: 60px
+    margin-left: 50px
+   &__item
+    @include text(500, 16px, 19px, #464646)
+   &__h2
+    @include text(600, 26px, 31px, #2F2F2F)
+
+
+
+
+
 

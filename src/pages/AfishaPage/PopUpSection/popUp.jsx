@@ -11,6 +11,14 @@ const PopUp = () => {
                     <div onClick={() => setOpen(!open)} className="popUp__catalog">
                         <CatalogSection/>
                     </div>
+                    <ul className="popUp__list-second">
+                        <li className="popUp__item">Кино </li>
+                        <li className="popUp__item">Театры</li>
+                        <li className="popUp__item">Концерты</li>
+                        <li className="popUp__item">Выставки</li>
+                        <li className="popUp__item">Спорт</li>
+                        <li className="popUp__item">Для детей </li>
+                    </ul>
                  </div>
                 {
                     open ?

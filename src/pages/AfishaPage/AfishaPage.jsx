@@ -4,14 +4,16 @@ import PopUp from "./PopUpSection/popUp";
 import SortSection from "./SortSection/SortSection";
 import CalendarSection from "./CalendarSection/CalendarSection";
 import ChooseCart from "./ChooseCart/ChooseCart";
+import SwiperAfisha from "./SwiperAfisha/SwiperAfisha";
 
 const AfishaPage = () => {
     return (
         <>
-          <PopUp/>
-          <SortSection/>
-          <CalendarSection/>
-          <ChooseCart/>
+            <PopUp/>
+            <SwiperAfisha/>
+            <SortSection/>
+            <CalendarSection/>
+            <ChooseCart/>
         </>
     );
 };
