@@ -24,6 +24,12 @@ const RegisterPartner = () => {
                                 </div>
                                 <h3 className="registerPartner__download">Загрузить логотип </h3>
                             </div>
+                            <p className="registerPartner__hat">Шапка </p>
+                            <div className="registerPartner__block">
+                                <p className="registerPartner__put">Вставить фото шапки </p>
+                                <p className="registerPartner__numbers">1440 на 300</p>
+                            </div>
+
                             <label htmlFor="" className="registerPartner__label">
                                 <span className="registerPartner__span">Наименование (брендовое название )</span>
                                 <input type="text" className="registerPartner__input"/>

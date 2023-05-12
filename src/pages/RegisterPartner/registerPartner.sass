@@ -1,6 +1,8 @@
 @import "src/sass/base/mixins"
 .registerPartner
   background: #0F0F0F
+  &__block
+    display: none
   &__form
     display: flex
     justify-content: center
@@ -257,4 +259,35 @@
 
 @media (min-width: 1440px)
   .registerPartner
+    &__wrapp
+      display: flex
+      column-gap: 60px
+
+    &__form
+      flex-direction: row
+      column-gap: 60px
+    &__h2
+      margin: 0 0 50px 0
+      @include text(700,28px,27px,#fff)
+    &__block
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      width: 380px
+      height: 96px
+      background: #FBFBFB
+      border-radius: 10px
+
+    &__hat
+      @include text(400,18px,21px,#E1E1E1)
+      margin: 17px 0 15px 0
+    &__put
+      @include text(400,18px,21px,#000)
+      margin-bottom: 5px
+    &__numbers
+      @include text(400,8px,9px,#00000090)
+
+
+
 
