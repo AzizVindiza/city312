@@ -6,6 +6,11 @@
   &__text
     @include text20
     color: $color2C2C2C
+  &_big
+    @include text(800,14px,17px,#000)
+    width: 100%
+
+
   &_blue
     background: linear-gradient(0deg, #7EC9F5 0%, #3957ED 97.5%)
     .btn__text
@@ -37,17 +42,24 @@
 
 
 @media (min-width: 640px)
+  .btn
+    &_big
+     @include text(800,14px,17px,#000)
+     width: 256px
 
 
 @media (min-width: 768px)
   .btn
-   &__text
-    @include text(600,11px,14px,#000)
+    &_big
+     @include text(800,14px,17px,#000)
+     width: 284px
+    &__text
+     @include text(600,11px,14px,#000)
 
 @media (min-width: 1024px)
   .btn
-   &__text
-    @include text(600,11px,14px,#000)
+    &__text
+     @include text(600,11px,14px,#000)
 
 @media (min-width: 1440px)
   .btn
