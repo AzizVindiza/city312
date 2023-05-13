@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import logo from "./logo.png"
+import cart from "./cart.png"
 import "./registerPartner.sass"
 import Btn from "../../components/Btn/Btn";
 
@@ -32,6 +33,10 @@ const RegisterPartner = () => {
 
                             <label htmlFor="" className="registerPartner__label">
                                 <span className="registerPartner__span">Наименование (брендовое название )</span>
+                                <input type="text" className="registerPartner__input"/>
+                            </label>
+                            <label htmlFor="" className="registerPartner__label">
+                                <span className="registerPartner__span">Адрес компании</span>
                                 <input type="text" className="registerPartner__input"/>
                             </label>
                             <label htmlFor="" className="registerPartner__label">
@@ -174,8 +179,10 @@ const RegisterPartner = () => {
 
                     </div>
 
-
                 </form>
+                <div className="registerPartner__cart">
+                    <img src={cart} alt="cart" className="registerPartner__cart-city"/>
+                </div>
             </div>
         </div>
     );

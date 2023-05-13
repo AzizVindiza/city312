@@ -1,25 +1,20 @@
 @import "src/sass/base/mixins"
-.registerPartner
+.registerUser
   background: #0F0F0F
-  &__block
-    display: none
+
   &__form
     display: flex
     justify-content: center
     flex-direction: column
     align-items: center
-  &__cart
-    display: none
-  &__box
-    &_third
-      width: 100%
+
 
 
   &__container
     padding: 40px 0 233px 0
 
   &__h2
-    @include text(700, 18px, 25px, #fff)
+    @include text(700, 20px, 27px, #fff)
     margin-bottom: 16px
     text-align: center
 
@@ -47,15 +42,24 @@
   &__label
     display: flex
     flex-direction: column
+    &_message
+     margin-bottom: 46px
+
 
   &__input
     width: 329px
     padding: 9px 13px
     background: #FBFBFB
     border-radius: 9.04399px
+  &__box
+    &_second
+      display: flex
+      flex-direction: column
+
+
 
   &__title
-    @include text(400, 16px, 16px, #fff)
+    @include text(400, 14px, 17px, #fff)
     margin: 15px 0 12px 0
 
   &__inputNum
@@ -65,36 +69,17 @@
     background: #FBFBFB
     border-radius: 9.04399px
 
-  &__labelSoc
-    display: flex
-    column-gap: 23px
+
 
   &__svg
     width: 24px
     height: 24px
 
-  &__inputSoc
-    width: 278px
-    padding: 9px 13px
-    background: #FBFBFB
-    border-radius: 9.04399px
-    margin-bottom: 21px
 
   &__h5
     @include text(400, 18px, 19px, #fff)
     margin: 0 0 32px 50px
 
-  &__days
-    border-radius: 15px 15px 0 0
-    width: 306px
-    height: 39px
-    background: #FBFBFB
-    box-shadow: 0 4.39503px 21.9751px -6.2817px rgba(0, 0, 0, 0.15)
-    padding: 10px 15px
-    display: flex
-    justify-content: space-between
-    margin: 0 auto
-    position: relative
 
   &__day
     @include text(400, 16px, 19px, #000)
@@ -103,17 +88,6 @@
   &__item
     @include text(400, 16px, 19px, #000)
 
-  &__weeks
-    display: flex
-    flex-direction: column
-    row-gap: 10px
-    background: #fff
-    width: 306px
-    position: absolute
-    top: 38px
-    left: 0
-    padding: 9px 0 9px 27px
-    border-radius: 0 0 15px 15px
 
   &__picture
     svg
@@ -123,8 +97,7 @@
   &__times
     display: flex
     column-gap: 15px
-    justify-content: center
-    margin: 25px 50px
+    margin: 16px 0
 
   &__labelTime
     width: 145px
@@ -133,6 +106,12 @@
     box-shadow: 0px 4.39503px 21.9751px -6.2817px rgba(0, 0, 0, 0.15)
     border-radius: 15px
     display: flex
+    position: relative
+  &__name
+    @include text(400, 16px, 19px, #fff)
+    position: absolute
+    top: -30px
+
 
   &__inputTime
     padding: 12px 15px
@@ -148,7 +127,7 @@
     column-gap: 10px
     align-items: center
     justify-content: center
-    margin-bottom: 22px
+    margin: 31px 0
 
   &__spanContract
     @include text(400, 14px, 17px, #ffff)
@@ -162,6 +141,9 @@
     text-align: center
     margin: 18px 0 0 0
     cursor: pointer
+  &__labelNum
+    display: flex
+    flex-direction: column
 
 
 @media (min-width: 640px)
@@ -189,9 +171,9 @@
       @include text(400, 14px, 16px, #fff)
 
     &__input
-     width: 349px
-     padding: 9px 13px
-     border-radius: 9.04399px
+      width: 349px
+      padding: 9px 13px
+      border-radius: 9.04399px
     &__box
       &_second
         display: flex
@@ -200,6 +182,10 @@
         row-gap: 13px
     &__h5
       margin-left: 50px
+    &__h2
+     @include text(700, 20px, 27px, #fff)
+     margin-bottom: 35px
+     text-align: center
 
 
 
@@ -240,9 +226,13 @@
     &__title
       @include text(400,18px,19px,#8F8F8F)
     &__h5
-     margin: 75px 0 32px 50px
+      margin: 75px 0 32px 50px
     &__has
       @include text(400,16px,15px, #C82D2D)
+    &__h2
+     @include text(700, 20px, 27px, #fff)
+     margin-bottom: 21px
+     text-align: center
 
 
 
@@ -259,48 +249,35 @@
     &__box
       &_third
         align-self: flex-start
+    &__h2
+     @include text(700, 28px, 27px, #fff)
+     margin-bottom: 22px
+     text-align: center
 
 
 
 
 @media (min-width: 1440px)
-  .registerPartner
-    position: relative
+  .registerUser
+    &__h2
+     @include text(700, 28px, 27px, #fff)
+     margin-bottom: 61px
+     text-align: center
 
-    &__wrapp
-      display: flex
-      column-gap: 60px
-
-    &__form
-      flex-direction: row
-      column-gap: 60px
     &__h2
       margin: 0 0 50px 0
       @include text(700,28px,27px,#fff)
-    &__block
-      display: flex
-      justify-content: center
-      align-items: center
-      flex-direction: column
-      width: 380px
-      height: 96px
-      background: #FBFBFB
-      border-radius: 10px
-
-    &__hat
-      @include text(400,18px,21px,#E1E1E1)
-      margin: 17px 0 15px 0
-    &__put
-      @include text(400,18px,21px,#000)
-      margin-bottom: 5px
-    &__numbers
-      @include text(400,8px,9px,#00000090)
     &__cart
       display: block
       position: absolute
       bottom: -50px
       right: 30px
-
+    &__input
+      width: 386px
+      height: 39px
+    &__inputNum
+      width: 386px
+      height: 39px
 
 
 

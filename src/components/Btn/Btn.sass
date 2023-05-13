@@ -8,7 +8,10 @@
     color: $color2C2C2C
   &_big
     @include text(800,14px,17px,#000)
-    width: 100%
+    width: 330px
+  &_btnUser
+    width: 215px
+
 
 
   &_blue
@@ -39,6 +42,8 @@
     padding: 8px 12px
     min-width: 130px
     @include text(600,11px,14px,#000000)
+    &_btnUser
+     width: 215px
 
 
 @media (min-width: 640px)
@@ -46,7 +51,8 @@
     &_big
      @include text(800,14px,17px,#000)
      width: 256px
-
+    &__btnUser
+     width: 215px
 
 @media (min-width: 768px)
   .btn
@@ -55,13 +61,16 @@
      width: 284px
     &__text
      @include text(600,11px,14px,#000)
+    &__btnUser
+      width: 239px
 
 @media (min-width: 1024px)
   .btn
     &__text
-
-
      @include text(600,11px,14px,#000)
+    &_btnUser
+       width: 239px
+
 
 @media (min-width: 1440px)
   .btn
@@ -70,6 +79,8 @@
      width: 239px
     &__text
       @include text(600,11px,14px,#000)
+    &_btnUser
+      width: 239px
 
 
 

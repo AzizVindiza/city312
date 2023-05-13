@@ -13,6 +13,8 @@ import DiscountsPage from "./pages/DiscountsPage/DiscountsPage";
 import AfishaPage from "./pages/AfishaPage/AfishaPage";
 import Entry from "./pages/Entry/Entry";
 import RegisterPartner from "./pages/RegisterPartner/RegisterPartner";
+import RegisterUser from "./pages/RegisterUser/RegisterUser";
+import ChoosePage from "./pages/ChoosePage/ChoosePage";
 
 
 const router = createBrowserRouter(
@@ -24,6 +26,8 @@ const router = createBrowserRouter(
             <Route path="afisha" element={<AfishaPage/>}/>
             <Route path="entry" element={<Entry/>}/>
             <Route path="registerPartner" element={<RegisterPartner/>}/>
+            <Route path="registerUser" element={<RegisterUser/>}/>
+            <Route path="choosePage" element={<ChoosePage/>}/>
         </Route>
     )
 );
