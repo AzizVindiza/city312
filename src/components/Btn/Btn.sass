@@ -11,6 +11,24 @@
     width: 330px
   &_btnUser
     width: 215px
+  &_basket
+    width: 100%
+    margin-bottom: 26px
+  &_leave
+    background: #FFFFFF
+    box-shadow: 0 3.6875px 9.21875px rgba(0, 0, 0, 0.25)
+    border-radius: 13.8281px
+    color: #000
+    width: 213px
+  &_ask
+    background: #0077FF
+    border-radius: 13.8281px
+    color: #FFFFFF
+    width: 213px
+    .btn__text
+         color: #fff
+
+
 
 
 
@@ -36,6 +54,11 @@
       -webkit-text-fill-color: transparent
       background-clip: text
       text-fill-color: transparent
+  &_ask
+     background: #0077FF
+     border-radius: 13.8281px
+     color: #FFFFFF
+     width: 213px
 
 @media (min-width: 640px)
   .btn
@@ -44,6 +67,16 @@
     @include text(600,11px,14px,#000000)
     &_btnUser
      width: 215px
+    &_basket
+     width: 247px
+     margin-bottom: 26px
+    &_leave
+
+     width: 156px
+    &_ask
+
+     color: #FFFFFF
+     width: 156px
 
 
 @media (min-width: 640px)
@@ -54,6 +87,7 @@
     &__btnUser
      width: 215px
 
+
 @media (min-width: 768px)
   .btn
     &_big
@@ -63,6 +97,17 @@
      @include text(600,11px,14px,#000)
     &__btnUser
       width: 239px
+    &_basket
+      width: 217px
+      margin-bottom: 30px
+    &_leave
+      width: 197px
+      height: 37px
+
+    &_ask
+      color: #FFFFFF
+      width: 197px
+      height: 37px
 
 @media (min-width: 1024px)
   .btn
@@ -70,6 +115,22 @@
      @include text(600,11px,14px,#000)
     &_btnUser
        width: 239px
+    &_basket
+      width: 192px
+      margin-bottom: 21px
+    &_leave
+      width: 197px
+      height: 46px
+      .btn__text
+        @include text(500,16px,20px,#000)
+
+    &_ask
+      color: #FFFFFF
+      width: 197px
+      height: 46px
+      .btn__text
+        @include text(500,16px,20px,#fff)
+
 
 
 @media (min-width: 1440px)
@@ -81,6 +142,20 @@
       @include text(600,11px,14px,#000)
     &_btnUser
       width: 239px
+    &_basket
+      width: 248px
+      margin-bottom: 50px
+    &_leave
+      width: 232px
+      height: 55px
+      .btn__text
+        @include text(500,20px,24px,#000)
+    &_ask
+      color: #FFFFFF
+      width: 232px
+      height: 55px
+      .btn__text
+        @include text(500,20px,24px,#fff)
 
 
 

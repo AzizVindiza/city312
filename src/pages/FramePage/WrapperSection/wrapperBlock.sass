@@ -1,0 +1,61 @@
+@import "src/sass/base/mixins"
+.wrapperBlock
+  &__container
+    padding: 33px 0 53px 0
+  &__h2
+    @include text(600,17px,22px,#202438)
+    margin-bottom: 10px
+  &__p
+    @include text(400,12px,12px, #B6B6B6)
+    margin-bottom: 10px
+
+
+
+@media (min-width: 640px)
+  .wrapperBlock
+    &__container
+     padding: 40px 0 26px 0
+    &__h2
+     @include text(600,17px,22px,#202438)
+
+    margin-bottom: 10px
+    &__p
+     @include text(400,12px,12px, #B6B6B6)
+     margin-bottom: 10px
+
+
+
+@media (min-width: 768px)
+  .wrapperBlock
+    &__container
+     padding: 59px 0 29px 0
+    &__h2
+     @include text(600,22px,26px,#202438)
+     margin-bottom: 14px
+    &__p
+      @include text(400,15px,16px, #B6B6B6)
+      margin-bottom: 13px
+
+@media (min-width: 1024px)
+  .wrapperBlock
+   &__container
+     padding: 41px 0 49px 0
+   &__wrapper
+     display: flex
+     column-gap: 79px
+
+
+
+
+@media (min-width: 1440px)
+  .wrapperBlock
+   &__wrapper
+     column-gap: 103px
+
+   &__h2
+     @include text(700,27px,29px,#202438)
+     margin-bottom: 13px
+   &__p
+     @include text(600,17px,19px, #B6B6B6)
+     margin-bottom: 13px
+

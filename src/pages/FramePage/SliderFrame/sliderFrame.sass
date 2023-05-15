@@ -1,0 +1,171 @@
+@import "src/sass/base/mixins"
+
+.sliderFrame
+
+  &__container
+    padding: 33px 0 25px 0
+    position: relative
+  &__mySwiper2
+    width: 100%
+    height: 100%
+    border-radius: 15px
+  &__next
+    position: absolute
+    right: 0
+    top: 50%
+    z-index: 10
+  &__prev
+    position: absolute
+    left: 0
+    top: 50%
+    z-index: 10
+
+
+
+  &__mySwiper
+   height: 20%
+   box-sizing: border-box
+   padding: 10px 0
+   display: none
+   img
+     border-radius: 9px
+  .swiper-button-next,  .swiper-button-prev
+    display: none
+
+
+//
+//
+.swiper-slide
+  text-align: center
+  font-size: 18px
+  background: #fff
+
+  /* Center slide text vertically */
+  display: flex
+  justify-content: center
+  align-items: center
+
+
+.swiper-slide img
+  display: block
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+
+
+
+//.swiper
+//  width: 100%
+//  height: 300px
+//  margin-left: auto
+//  margin-right: auto
+
+
+.swiper-slide
+  background-size: cover
+  background-position: center
+
+
+
+
+.mySwiper .swiper-slide
+  width: 25%
+  height: 100%
+  opacity: 0.4
+
+
+.mySwiper .swiper-slide-thumb-active
+  opacity: 1
+
+
+.swiper-slide img
+  display: block
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+
+@media (min-width: 640px)
+  .sliderFrame
+
+    &__mySwiper
+      display: block
+      img
+        height: 50px
+    &__mySwiper2
+     width: 100%
+     height: 307px
+    &__next
+     position: absolute
+     right: 0
+     top: 50%
+     transform: translateY(-50%)
+     z-index: 10
+    &__prev
+     position: absolute
+     left: 0
+     top: 50%
+     transform: translateY(-50%)
+     z-index: 10
+
+
+
+
+@media (min-width: 768px)
+  .sliderFrame
+    &__h2
+     @include text(600,22px,26px,#202438)
+    margin-bottom: 14px
+    &__p
+     @include text(400,15px,16px, #B6B6B6)
+     margin-bottom: 13px
+
+    &__mySwiper
+      display: block
+      height: 43px
+      img
+        height: 50px
+    &__mySwiper2
+      width: 100%
+      height: 350px
+      margin-bottom: 6px
+
+@media (min-width: 1024px)
+  .sliderFrame
+    width: 536px
+    &__container
+      padding: 0
+
+    &__mySwiper
+      display: block
+      height: 43px
+      margin-top: 9px
+    &__mySwiper2
+      width: 100%
+      height: 350px
+      margin-bottom: 6px
+
+
+@media (min-width: 1440px)
+  .sliderFrame
+
+    &__container
+      padding: 0
+    &__mySwiper
+      display: block
+      height: 43px
+
+    &__mySwiper2
+      width: 100%
+      height: 450px
+    &__next
+     position: absolute
+     right: 0
+     top: 50%
+     z-index: 10
+    &__prev
+     position: absolute
+     left: 0
+     top: 50%
+     z-index: 10

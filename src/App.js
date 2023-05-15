@@ -15,6 +15,9 @@ import Entry from "./pages/Entry/Entry";
 import RegisterPartner from "./pages/RegisterPartner/RegisterPartner";
 import RegisterUser from "./pages/RegisterUser/RegisterUser";
 import ChoosePage from "./pages/ChoosePage/ChoosePage";
+import SliderFrame from "./pages/FramePage/SliderFrame/SliderFrame";
+import WrapperSection from "./pages/FramePage/WrapperSection/WrapperSection";
+import FramePage from "./pages/FramePage/FramePage";
 
 
 const router = createBrowserRouter(
@@ -28,6 +31,7 @@ const router = createBrowserRouter(
             <Route path="registerPartner" element={<RegisterPartner/>}/>
             <Route path="registerUser" element={<RegisterUser/>}/>
             <Route path="choosePage" element={<ChoosePage/>}/>
+            <Route path="frame" element={<FramePage/>}/>
         </Route>
     )
 );
