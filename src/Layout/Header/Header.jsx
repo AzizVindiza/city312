@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
-import logo from './logo.png'
+import logo from "./logocity.png"
 import "./Header.scss"
 
 import HamburgerToggle from "./HamburgerToggle/HamburgerToggle";
@@ -20,20 +20,10 @@ const Header = () => {
         })
     };
 
-    // const [small, setSmall] = useState(false);
-    //
-    // useEffect(() => {
-    //     if (typeof window !== "undefined") {
-    //         window.addEventListener("scroll", () =>
-    //             setSmall(window.pageYOffset > 200)
-    //         );
-    //     }
-    // }, []);
+
     return (
 
-        // <header className={`header ${
-        //     small ? "scrolled" : ""
-        // }`}>
+
         <header className="header">
             <div className="header__container container ">
                 <h1 className="header__h1">

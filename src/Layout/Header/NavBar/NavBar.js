@@ -1,17 +1,17 @@
 import React from 'react';
 import "./Navbar.scss"
-import {NavLink} from "react-router-dom";
-import logo from "../logo.png";
+import {Link, NavLink} from "react-router-dom";
+import logo from  "../logocity.png"
 import Btn from "../../../components/Btn/Btn";
 
 
 const NavBar = ({toggleClass}) => {
-    // const {user} = useSelector((store) => store.user)
+
     return (
         <ul className='nav container'>
             <li className="nav__item">
-                <NavLink className="header__logo" to='/'>
-                    <img src={logo} alt="дисконтная карта
+                <NavLink className="nav__logo" to='/'>
+                    <img className={'nav__img'} src={logo} alt="дисконтная карта
                     для скидок"/>
                 </NavLink>
             </li>
@@ -20,46 +20,25 @@ const NavBar = ({toggleClass}) => {
                     Единая карта лояльности
                 </h2>
             </li>
-            <li className="nav__item">
-                <a className="nav__link" href="https://instagram.com">О нас</a>
-            </li>
-            <li className='nav__item'><NavLink className="nav__link" to="/" onClick={() => {
-                toggleClass()
-            }}>Цены</NavLink></li>
-            <li className='nav__item'><NavLink className="nav__link" to="/services" onClick={() => {
-                toggleClass()
-            }}>Услуги</NavLink></li>
-            <Btn text={"ВХОД"} type={"button"} theme={"transparent"}/>
-            <Btn text={"РЕГИСТРАЦИЯ"} type={"button"} />
-
-            {/*<li className='nav__item'><NavLink className="nav__link" to="/reviews" onClick={() => {*/}
-            {/*    toggleClass()*/}
-            {/*}}>Отзывы</NavLink></li>*/}
-            {/*<li className='nav__item'><NavLink className="nav__link" to="/about" onClick={() => {*/}
-            {/*    toggleClass()*/}
-            {/*}}>Контакты</NavLink>*/}
+            <ul className="nav__list">
+                <li className="nav__link">о проекте</li>
+                <Link to={'afisha'} className="nav__link">афиши/акции</Link>
+                <Link to={'discount'} className="nav__link">Скидки</Link>
+                <li className="nav__link">Парнерам</li>
+                <li className="nav__link">Контакты</li>
+            </ul>
+            {/*<li className="nav__item">*/}
+            {/*    <a className="nav__link" href="https://instagram.com">О нас</a>*/}
             {/*</li>*/}
-            {/*<li className='nav__item'>*/}
-            {/*    <NavLink className="nav__link" to="/vacancies"*/}
-            {/*             onClick={() => {*/}
-            {/*                 toggleClass()*/}
-            {/*             }}>Карьера</NavLink></li>*/}
-            {/*{user.email === "" ? <>*/}
-            {/*        <li className='nav__item nav__acc'>*/}
-            {/*            <NavLink className="nav__link" to="/register" onClick={toggleClass}>*/}
-            {/*                Регистрация </NavLink>*/}
-            {/*        </li>*/}
-            {/*        <li className='nav__item nav__acc'>*/}
-            {/*            <NavLink className="nav__link" to="/login" onClick={toggleClass}>*/}
-            {/*                Войти </NavLink>*/}
-            {/*        </li>*/}
-            {/*    </>*/}
+            {/*<li className='nav__item'><NavLink className="nav__link" to="/" onClick={() => {*/}
+            {/*    toggleClass()*/}
+            {/*}}>Цены</NavLink></li>*/}
+            {/*<li className='nav__item'><NavLink className="nav__link" to="/services" onClick={() => {*/}
+            {/*    toggleClass()*/}
+            {/*}}>Услуги</NavLink></li>*/}
+            <Btn text={"ВХОД"} type={"button"} theme={"transparent"}/>
+            <Btn text={"РЕГИСТРАЦИЯ"} type={"button"} theme={'second'} />
 
-            {/*    :*/}
-            {/*    <li className='nav__item '>*/}
-            {/*        <NavLink className="nav__link nav__acc" to="/account/info" onClick={toggleClass}>Мой*/}
-            {/*            аккаунт</NavLink>*/}
-            {/*    </li>}*/}
         </ul>
     );
 };

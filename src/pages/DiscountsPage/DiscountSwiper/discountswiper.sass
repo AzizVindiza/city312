@@ -1,22 +1,25 @@
 .discountswiper
+  position: relative
   display: none
+  .swiper-wrapper
+    position: relative
   .swiper
+    position: relative
     width: 100%
     height: 100%
   .swiper-slide
     text-align: center
-  // Center slide text vertically
-  //  display: flex
-  //  justify-content: center
-  //  align-items: center
+    display: flex
+    justify-content: center
+    align-items: center
   .swiper-slide img
     display: block
     width: 100%
     height: 100%
     object-fit: cover
+
 @media (min-width: 640px)
   .discountswiper
-    position: relative
     display: block
     &__next
       position: absolute
@@ -44,6 +47,18 @@
       border: 1.5px solid #AD00FF
       border-radius: 50%
       padding: 10px
+    &__next
+      position: absolute
+      right: 60px
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 50
+    &__prev
+      position: absolute
+      left: 60px
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 50
 
 
 @media (min-width: 1440px)
@@ -52,3 +67,15 @@
       border: 1.5px solid #AD00FF
       border-radius: 50%
       padding: 10px
+    &__next
+      position: absolute
+      right: 100px
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 50
+    &__prev
+      position: absolute
+      left: 100px
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 50

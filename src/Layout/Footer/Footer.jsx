@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Footer.sass"
-import logo from "./logo.png"
+import logo from "./logocity.png"
 const Footer = () => {
     return (
         <footer className="footer">

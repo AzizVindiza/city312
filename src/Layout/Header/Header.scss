@@ -11,6 +11,10 @@
   &.scrolled{
     background: #284AAC;
   }
+  &__logo{
+    width: 80px;
+    height: 80px;
+  }
 
 }
 
@@ -22,8 +26,10 @@
   }
   &title{
     @include text16;
-    @include Exo;
+    @include text(700,16px,19px,#ffffff);
     text-transform: uppercase;
+    width: 161px;
+
   }
   &container{
     width: 100%;
@@ -58,11 +64,15 @@
 
 
 @media (min-width: 640px ) {
-  .header__{
+  .header{
     &container{
       max-width: 100%;
       width: 100%;
       padding: 0 80px 0 20px;
+    }
+    &__title{
+      width: 161px;
+      @include text(700,16px,19px,#ffffff)
     }
   }
 }
