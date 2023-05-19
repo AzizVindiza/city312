@@ -15,12 +15,44 @@ import bg2640 from './FirstSection__bg2640.png'
 import bg2768 from './FirstSection__bg2768.png'
 import bg21024 from './FirstSection__bg21024.png'
 import bg21440 from './FirstSection__bg21440.png'
+import CartAnimation from "./CartAnimation/CartAnimation";
+import {motion} from "framer-motion";
+
+
+const textMotion = {
+    hidden: {
+        x: 700,
+        opacity: 0,
+    },
+    visible: custom => (
+        {
+            x: 0,
+            opacity: 9,
+            transition: {delay: custom * 0.4}
+        }
+    )
+
+}
+const cartMotion = {
+    hidden: {
+        x: -100,
+        opacity: 0,
+    },
+    visible: custom => (
+        {
+            x: 0,
+            opacity: 1,
+            transition: {delay: custom * 0.2}
+        }
+    )
+
+}
 
 
 const FirstSection = () => {
     return (
-        <section className="firstSection">
-            <div className="container firstSection__container">
+        <motion.section  initial = "hidden"  whileInView = "visible"   className="firstSection">
+            <div    className="container firstSection__container">
                 <div className="firstSection__top">
                     <div className="firstSection__text">
                         <h2 className="firstSection__h2">
@@ -33,15 +65,16 @@ const FirstSection = () => {
                             на взаимовыгодных условиях
                         </h3>
                     </div>
-                    <div className="firstSection__img">
-                        <picture>
-                            <source media="(min-width:1439px)" srcSet={img1440}/>
-                            <source media="(min-width:1025px)" srcSet={img1025}/>
-                            <source media="(min-width:768px)" srcSet={img768}/>
-                            <source media="(min-width:640px)" srcSet={img640}/>
-                            <img src={img} alt="312 card"/>
-                        </picture>
-                    </div>
+                    <motion.div custom={2} variants={textMotion} className="firstSection__img">
+                        <CartAnimation/>
+                        {/*<picture>*/}
+                        {/*    <source media="(min-width:1439px)" srcSet={img1440}/>*/}
+                        {/*    <source media="(min-width:1025px)" srcSet={img1025}/>*/}
+                        {/*    <source media="(min-width:768px)" srcSet={img768}/>*/}
+                        {/*    <source media="(min-width:640px)" srcSet={img640}/>*/}
+                        {/*    <img src={img} alt="312 card"/>*/}
+                        {/*</picture>*/}
+                    </motion.div>
                 </div>
                 <div className="firstSection__numbers">
                     <div className="firstSection__card">
@@ -81,7 +114,7 @@ const FirstSection = () => {
                 </div>
 
             </div>
-        </section>
+        </motion.section>
     );
 };
 

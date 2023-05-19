@@ -9,16 +9,18 @@ const NavBar = ({toggleClass}) => {
 
     return (
         <ul className='nav container'>
-            <li className="nav__item">
-                <NavLink className="nav__logo" to='/'>
-                    <img className={'nav__img'} src={logo} alt="дисконтная карта
+            <li className="nav__block">
+                <li className="nav__item">
+                    <NavLink className="nav__logo" to='/'>
+                        <img className={'nav__img'} src={logo} alt="дисконтная карта
                     для скидок"/>
-                </NavLink>
-            </li>
-            <li className="nav__item">
-                <h2 className="header__title">
-                    Единая карта лояльности
-                </h2>
+                    </NavLink>
+                </li>
+                <li className="nav__item">
+                    <h2 className="header__title">
+                        Единая карта лояльности
+                    </h2>
+                </li>
             </li>
             <ul className="nav__list">
                 <li className="nav__link">о проекте</li>
