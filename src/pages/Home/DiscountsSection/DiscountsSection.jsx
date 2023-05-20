@@ -7,7 +7,9 @@ import img3 from "./3.png"
 import img2 from "./2.png"
 import img1 from "./1.png"
 import Line from "../../../components/Line/Line";
+
 const DiscountsSection = () => {
+
     return (
         <section className="discountsSection">
                     <h2 className="discountsSection__title title">

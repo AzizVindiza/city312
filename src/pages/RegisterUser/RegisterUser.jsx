@@ -1,15 +1,17 @@
-import React, {useState} from 'react';
+import React, {useRef, useState} from 'react';
 import Btn from "../../components/Btn/Btn";
 import "./registerUser.sass"
-import {useAddRegisterMutation} from "../../redux/ApiSlice/ApiSlice";
-import {fillRegister} from "../../redux/reducers/registerSlice";
+import {useAddUserMutation} from "../../redux/ApiSlice/ApiSlice";
+// import {fillUser} from "../../redux/reducers/registerSlice";
 import {useForm} from "react-hook-form";
 import {Link} from "react-router-dom";
-import {useDispatch, useSelector} from "react-redux";
+import axios from "axios";
 
 const RegisterPartner = () => {
-    const dispatch = useDispatch()
-    const [addUser] = useAddRegisterMutation()
+    const [image,setImage] = useState('')
+    const images = useRef()
+
+    const [ sendRequest,{data,isSuccess}] =  useAddUserMutation()
 
     const {
         register,
@@ -21,8 +23,24 @@ const RegisterPartner = () => {
     } = useForm({mode:"onBlur"})
 
     const addRegister = (data) => {
-        addUser(data)
-        dispatch(fillRegister(data))
+         sendRequest(data)
+    }
+    const  changeImage = async (e) => {
+        try {
+            const formData = new FormData()
+            const file = e.target.files[0]
+            formData.append("image",file)
+            await axios.post("https://card-312.herokuapp.com/user",formData)
+                .then(({data}) => {
+                    return setImage(data.url)
+                })
+
+        }catch (err){
+            console.log(e)
+            console.log(err,"Ошибка")
+            alert("Ошибка при загрузке")
+
+        }
     }
 
 
@@ -33,9 +51,11 @@ const RegisterPartner = () => {
                 <form onSubmit={handleSubmit(addRegister)} className="registerUser__form">
 
                         <div className="registerUser__box">
-                            <div className="registerUser__wrapper">
+                            <div onClick={() => images.current.click()} className="registerUser__wrapper">
                                 <div className="registerUser__logo">
-                                    <img src={''} alt=""/>
+                                    <input hidden accept={"image/*,.png,.jpg,.web"}  onChange={changeImage} ref={images} type="file"/>
+                                    {/*<img src={''} alt=""/>*/}
+                                    {image}
                                 </div>
                                 <h3 className="registerUser__download">Загрузить логотип </h3>
                             </div>
@@ -47,7 +67,7 @@ const RegisterPartner = () => {
                                         message: "",
                                         value: ""
                                     }
-                                })} type="text" className="registerUser__input"/>
+                                })} type="email" className="registerUser__input"/>
                                 <span className="registerUser__error">{errors.email && errors.email.message}</span>
                             </label>
                             <div className="registerUser__times">
@@ -101,18 +121,18 @@ const RegisterPartner = () => {
                                         message: "",
                                         value: ""
                                     }
-                                })} type="email" className="registerUser__input"/>
+                                })} type="date" className="registerUser__input"/>
                                 <span className="registerUser__error">{errors.data && errors.data.message}</span>
 
                             </label>
                             <h4 className="registerPartner__title">Номер дисконтной карты</h4>
                             <label htmlFor="" className="registerUser__labelNum">
-                                <input {...register("cart",{
+                                <input {...register("card",{
                                     required: {
                                         message: "",
                                         value: ""
                                     }
-                                })} type="number" className="registerUser__inputNum"/>
+                                })} type="text" className="registerUser__inputNum"/>
                                 <span className="registerUser__error">{errors.cart && errors.cart.message}</span>
 
                             </label>
@@ -143,7 +163,7 @@ const RegisterPartner = () => {
 
                         </label>
                         <div className="registerUser__submit">
-                            <Btn text={'РЕГИСТРАЦИЯ'} theme={'btnUser'}/>
+                            <Btn type={"submit"} text={'РЕГИСТРАЦИЯ'} theme={'btnUser'}/>
                         </div>
                         <Link to={"entry"} className="registerUser__has">у меня есть аккаунт</Link>
 
