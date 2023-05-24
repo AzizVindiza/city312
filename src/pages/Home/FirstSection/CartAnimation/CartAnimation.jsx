@@ -1,7 +1,10 @@
 import Card from "react-animated-3d-card";
-import { useState } from "react";
+import {useState} from "react";
 import card from "./card.png"
-import logo from "./312.png"
+import logo from "./312.svg"
+import city from "./city.svg"
+import city321 from "./city321.kg.png"
+import text from "./text.svg"
 
 export default function CartAnimation() {
     const [showFront, setShowFront] = useState("Max Verstappen");
@@ -27,27 +30,27 @@ export default function CartAnimation() {
                 onClick={() => setShowFront("Lewis Hamilton")}
             >
                 <div>
-                    <div>
-                        <img
-                            style={{
-                                position: "absolute",
-                                left: "25px",
-                                top: "25px",
-                                height: "50px"
-                            }}
-                            src={logo}
-                            className="card-item__chip"
-                            alt="credit card chip"
-                        ></img>
-                    </div>
+                    {/*<div>*/}
+                    {/*    <img*/}
+                    {/*        style={{*/}
+                    {/*            position: "absolute",*/}
+                    {/*            left: "25px",*/}
+                    {/*            top: "25px",*/}
+                    {/*            height: "50px"*/}
+                    {/*        }}*/}
+                    {/*        src={logo}*/}
+                    {/*        className="card-item__chip"*/}
+                    {/*        alt="credit card chip"*/}
+                    {/*    ></img>*/}
+                    {/*</div>*/}
                     <img
                         style={{
                             position: "absolute",
                             right: "25px",
                             top: "25px",
-                            height: "50px"
+                            height: "13px"
                         }}
-                        src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/visa.png"
+                        src={city321}
                         className="card-item__chip"
                         alt="credit card chip"
                     ></img>
@@ -60,42 +63,42 @@ export default function CartAnimation() {
                         justifyContent: "center"
                     }}
                 >
-                    <div
-                        style={{
-                            fontSize: "30px",
-                            fontFamily: "Fira Code",
-                            color: "white"
-                        }}
-
-                    >
-                        <label>1234</label>
-                        <label style={{ marginLeft: "30px" }}>1234</label>
-                        <label style={{ marginLeft: "30px" }}>1234</label>
-                        <label style={{ marginLeft: "30px" }}>1234</label>
-                    </div>
+               {/*1234*/}
                 </div>
                 <div>
                     <label
                         style={{
                             color: "white",
                             position: "absolute",
-                            bottom: "60px",
-                            left: "25px",
-                            opacity: 0.5
+                            bottom: "130px",
+                            right: "10px"
                         }}
                     >
-                        Card holder
+                        <img
+                            src={text} alt="city"
+                            style={{
+                                width: "200px",
+                                height: "54px"
+                            }}
+
+                        />
                     </label>
                     <label
                         style={{
                             color: "white",
                             position: "absolute",
-                            bottom: "60px",
-                            right: "25px",
-                            opacity: 0.5
+                            bottom: "70px",
+                            right: "95px"
                         }}
                     >
-                        Expires
+                        <img
+                            style={{
+                                height: "100px"
+                            }}
+                            src={city}
+                            className="card-item__chip"
+                            alt="credit card chip"
+                        ></img>
                     </label>
                 </div>
 
@@ -104,25 +107,55 @@ export default function CartAnimation() {
                         style={{
                             color: "white",
                             position: "absolute",
-                            bottom: "25px",
+                            bottom: "10px",
                             left: "25px",
                             opacity: 1,
                             fontSize: "25px"
                         }}
                     >
-                        {showFront}
+                        <div className="ocr"
+                             style={{
+                                 fontSize: "18px",
+                                 color: "#fff"
+                             }}
+                        >
+
+                            Vindiza Aziz
+
+                        </div>
+                        <div
+                            // style={{
+                            //     fontSize: "30px",
+                            //     fontFamily: "Fira Code",
+                            //     color: "white"
+                            // }}
+
+                        >
+                            <label className="ocr">1234</label>
+                            <label className="ocr" style={{marginLeft: "10px"}}>1234</label>
+                            <label className="ocr" style={{marginLeft: "10px"}}>1234</label>
+                            <label className="ocr" style={{marginLeft: "10px"}}>1234</label>
+                        </div>
+
                     </label>
                     <label
                         style={{
                             color: "white",
                             position: "absolute",
-                            bottom: "25px",
-                            right: "25px",
+                            bottom: "120px",
+                            left: "10px",
                             opacity: 1,
                             fontSize: "25px"
                         }}
                     >
-                        10/22
+                        <img
+                            style={{
+                                height: "100px"
+                            }}
+                            src={logo}
+                            className="card-item__chip"
+                            alt="credit card chip"
+                        ></img>
                     </label>
                 </div>
             </Card>

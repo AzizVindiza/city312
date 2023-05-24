@@ -9,11 +9,10 @@ const NavBar = ({toggleClass}) => {
 
     return (
         <ul className='nav container'>
-            <li className="nav__block">
+            <ul className="nav__block">
                 <li className="nav__item">
                     <NavLink className="nav__logo" to='/'>
-                        <img className={'nav__img'} src={logo} alt="дисконтная карта
-                    для скидок"/>
+                        <img className={'nav__img'} src={logo} alt="Единая карта лояльности"/>
                     </NavLink>
                 </li>
                 <li className="nav__item">
@@ -21,12 +20,12 @@ const NavBar = ({toggleClass}) => {
                         Единая карта лояльности
                     </h2>
                 </li>
-            </li>
+            </ul>
             <ul className="nav__list">
                 <li className="nav__link">о проекте</li>
                 <Link to={'afisha'} className="nav__link">афиши/акции</Link>
                 <Link to={'discount'} className="nav__link">Скидки</Link>
-                <li className="nav__link">Парнерам</li>
+                <li className="nav__link">Партнерам</li>
                 <li className="nav__link">Контакты</li>
             </ul>
             {/*<li className="nav__item">*/}

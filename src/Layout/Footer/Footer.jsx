@@ -10,9 +10,8 @@ const Footer = () => {
                         <div className="footer__logo">
                             <img src={logo} alt="" className="footer__city"/>
                         </div>
-                        <h1 className="footer__h1">дисконтная карта
-                            для скидок
-                        </h1>
+                        <h2 className="footer__h1">Единая карта лояльности
+                        </h2>
                     </div>
                     <div className="footer__box">
                         <ul className="footer__ul">
@@ -75,9 +74,8 @@ const Footer = () => {
                     <div className="footer__logo">
                         <img src={logo} alt="" className="footer__city"/>
                     </div>
-                    <h1 className="footer__h1">дисконтная карта
-                        для скидок
-                    </h1>
+                    <h2 className="footer__h1">Единая карта лояльности
+                    </h2>
                     <ul className="footer__ul">
                         <li className="footer__item">Сотрудничество</li>
                         <li className="footer__item">Тех.поддержка</li>
