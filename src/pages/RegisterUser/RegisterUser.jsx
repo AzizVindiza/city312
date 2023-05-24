@@ -90,7 +90,7 @@ const RegisterPartner = () => {
                                 </label>
                                 <label  className="registerUser__labelTime">
                                     <span className={'registerUser__name'}>Фамилия</span>
-                                    <input {...register("lastname",{
+                                    <input {...register("surname",{
                                         required: {
                                             message: "",
                                             value: ""
@@ -101,18 +101,18 @@ const RegisterPartner = () => {
 <path d="M14.2559 12.707L11.3745 16V6H9.62448V16L6.74311 12.707L5.50586 14.121L9.26223 18.414C9.59041 18.7889 10.0354 18.9996 10.4995 18.9996C10.9635 18.9996 11.4086 18.7889 11.7367 18.414L15.4931 14.121L14.2559 12.707Z" fill="#F8A303"/>
 </svg>
                                 </span>
-                                    <span className="registerUser__error">{errors.lastname && errors.lastname.message}</span>
+                                    <span className="registerUser__error">{errors.surname && errors.surname.message}</span>
 
                                 </label>
                             </div>
                             <label htmlFor="" className="registerUser__label">
                                 <span className="registerUser__span">Номер телефона</span>
-                                <input {...register("email",{
+                                <input {...register("phone_one",{
                                     required: {
                                         message: "",
                                         value: ""
                                     }
-                                })} type="number" className="registerUser__input"/>
+                                })} type="text" className="registerUser__input"/>
                             </label>
                             <label htmlFor="" className="registerUser__label">
                                 <span className="registerUser__span">Дата рождения</span>

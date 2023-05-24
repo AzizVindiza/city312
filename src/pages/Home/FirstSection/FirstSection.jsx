@@ -51,7 +51,7 @@ const cartMotion = {
 
 const FirstSection = () => {
     return (
-        <motion.section  initial = "hidden"  whileInView = "visible"   className="firstSection">
+        <motion.section   initial = "hidden"  whileInView = "visible"   className="firstSection">
             <div    className="container firstSection__container">
                 <div className="firstSection__top">
                     <div className="firstSection__text">
