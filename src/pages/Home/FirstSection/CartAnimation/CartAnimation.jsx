@@ -159,6 +159,7 @@ export default function CartAnimation() {
                     </label>
                 </div>
             </Card>
+
         </div>
     );
 }
