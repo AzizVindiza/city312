@@ -7,7 +7,6 @@ import city321 from "./city321.kg.png"
 import text from "./text.svg"
 
 export default function CartAnimation() {
-    const [showFront, setShowFront] = useState("Max Verstappen");
 
     return (
         <div
@@ -27,7 +26,6 @@ export default function CartAnimation() {
                     height: "253px",
                     cursor: "pointer"
                 }}
-                onClick={() => setShowFront("Lewis Hamilton")}
             >
                 <div>
                     {/*<div>*/}
