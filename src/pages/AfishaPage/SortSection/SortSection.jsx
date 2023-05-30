@@ -1,7 +1,11 @@
 import React from 'react';
 import DiscountCard from "../../../components/DiscountCard/DiscountCard";
 import "./sortSection.sass"
+import {useGetCard} from "../../../redux/ApiSlice/ApiSlice";
+
 const SortSection = () => {
+    const {data,isLoading} = useGetCard()
+    console.log(data)
     return (
         <section className={'sortSection'}>
             <div className="container sortSection__container">
@@ -12,7 +16,11 @@ const SortSection = () => {
                     <DiscountCard/>
                     <DiscountCard/>
                 </div>
-
+                {
+                    data.map((item) => (
+                        <p>{item.name}</p>
+                    ))
+                }
             </div>
         </section>
     );

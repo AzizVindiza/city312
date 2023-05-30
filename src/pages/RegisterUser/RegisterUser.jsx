@@ -1,8 +1,7 @@
 import React, {useRef, useState} from 'react';
 import Btn from "../../components/Btn/Btn";
 import "./registerUser.sass"
-import {useAddUserMutation} from "../../redux/ApiSlice/ApiSlice";
-// import {fillUser} from "../../redux/reducers/registerSlice";
+
 import {useForm} from "react-hook-form";
 import {Link} from "react-router-dom";
 import axios from "axios";
@@ -11,7 +10,7 @@ const RegisterPartner = () => {
     const [image,setImage] = useState('')
     const images = useRef()
 
-    const [ sendRequest,{data,isSuccess}] =  useAddUserMutation()
+
 
     const {
         register,
@@ -23,24 +22,7 @@ const RegisterPartner = () => {
     } = useForm({mode:"onBlur"})
 
     const addRegister = (data) => {
-        sendRequest(data)
-    }
-    const  changeImage = async (e) => {
-        try {
-            const formData = new FormData()
-            const file = e.target.files[0]
-            formData.append("image",file)
-            await axios.post("https://card-312.herokuapp.com/user",formData)
-                .then(({data}) => {
-                    return setImage(data.url)
-                })
-
-        }catch (err){
-            console.log(e)
-            console.log(err,"Ошибка")
-            alert("Ошибка при загрузке")
-
-        }
+        console.log(data)
     }
 
 
@@ -51,9 +33,9 @@ const RegisterPartner = () => {
                 <form onSubmit={handleSubmit(addRegister)} className="registerUser__form">
 
                     <div className="registerUser__box">
-                        <div onClick={() => images.current.click()} className="registerUser__wrapper">
+                        <div   className="registerUser__wrapper">
                             <div className="registerUser__logo">
-                                <input hidden accept={"image/*,.png,.jpg,.web"}  onChange={changeImage} ref={images} type="name"/>
+                                <input hidden accept={"image/*,.png,.jpg,.web"}   ref={images} type="name"/>
                                 {/*<img src={''} alt=""/>*/}
                                 {image}
                             </div>
