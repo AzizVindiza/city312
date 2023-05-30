@@ -18,6 +18,7 @@ import ChoosePage from "./pages/ChoosePage/ChoosePage";
 import SliderFrame from "./pages/FramePage/SliderFrame/SliderFrame";
 import WrapperSection from "./pages/FramePage/WrapperSection/WrapperSection";
 import FramePage from "./pages/FramePage/FramePage";
+import ClientsPage from "./pages/Home/ClientsPage/ClientsPage";
 
 
 const router = createBrowserRouter(
@@ -32,6 +33,7 @@ const router = createBrowserRouter(
             <Route path="registerUser" element={<RegisterUser/>}/>
             <Route path="choosePage" element={<ChoosePage/>}/>
             <Route path="frame" element={<FramePage/>}/>
+            <Route path="clients" element={<ClientsPage/>}/>
         </Route>
     )
 );

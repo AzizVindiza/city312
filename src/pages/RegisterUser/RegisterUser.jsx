@@ -53,7 +53,7 @@ const RegisterPartner = () => {
                     <div className="registerUser__box">
                         <div onClick={() => images.current.click()} className="registerUser__wrapper">
                             <div className="registerUser__logo">
-                                <input hidden accept={"image/*,.png,.jpg,.web"}  onChange={changeImage} ref={images} type="file"/>
+                                <input hidden accept={"image/*,.png,.jpg,.web"}  onChange={changeImage} ref={images} type="name"/>
                                 {/*<img src={''} alt=""/>*/}
                                 {image}
                             </div>
