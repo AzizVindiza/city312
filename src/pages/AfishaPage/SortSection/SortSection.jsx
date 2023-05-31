@@ -13,16 +13,12 @@ const SortSection = () => {
             <div className="container sortSection__container">
                 <h2 className={'sortSection__h2'}>Главное</h2>
                 <div className="sortSection__wrapper">
-                    <DiscountCard/>
-                    <DiscountCard/>
-                    <DiscountCard/>
-                    <DiscountCard/>
+                    {/*<DiscountCard/>*/}
+                    {/*<DiscountCard/>*/}
+                    {/*<DiscountCard/>*/}
+                    {/*<DiscountCard/>*/}
                 </div>
-                {/*{*/}
-                {/*    data.map((item) => (*/}
-                {/*        <p>{item.name}</p>*/}
-                {/*    ))*/}
-                {/*}*/}
+
             </div>
         </section>
     );

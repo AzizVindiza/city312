@@ -1,7 +1,9 @@
 import React from 'react';
 import "./PartnersSection.sass"
 import PartnerCard from "../../../components/PartnerCard/PartnerCard";
+import {useGetPartnersQuery} from "../../../redux/ApiSlice/ApiSlice";
 const PartnersSection = () => {
+   const {data,isLoading} = useGetPartnersQuery()
     return (
         <section className="partnersSection">
             <div className="container partnersSection__container">
@@ -9,8 +11,9 @@ const PartnersSection = () => {
                     ПАРТНЕРЫ
                 </h2>
                 <div className="partnersSection__cards">
-                    <PartnerCard/>
-                    <PartnerCard/>
+                            <PartnerCard  />
+
+
                 </div>
             </div>
         </section>

@@ -15,8 +15,8 @@ const PopularSection = () => {
                     КАЖДЫЙ ДЕНЬ МАГАЗИН БУДЕТ ОБНОВЛЯТСЯ НОВЫМИ СКИДКАМИ, ВЫ БУДЕТЕ УВЕДОМЛЕНЫ, ЕСЛИ БУДЕТЕ ПОДПИСЫВАТЬСЯ НА ТОТ ИЛИ ИНОЙ БРЕНД, ТАКЖЕ ТУТ НУЖЕН КАКОЙ ТО ТЕКСТ ИЛИ ЧТО ТО
                 </p>
                 <div className="popularSection__cards">
-                    <DiscountCard/>
-                    <DiscountCard/>
+                    {/*<DiscountCard/>*/}
+                    {/*<DiscountCard/>*/}
                 </div>
 
                 <Btn text={"полный список"} type={"button"}/>
