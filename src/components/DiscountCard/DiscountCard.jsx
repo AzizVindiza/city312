@@ -41,6 +41,7 @@ const DiscountCard = () => {
                     <h4 className="discount__h4">Опубликовано: 02.10.2022</h4>
                     <h5 className="discount__price">599 сом</h5>
                 </div>
+                {}
             </div>
         </div>
     );

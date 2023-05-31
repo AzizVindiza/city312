@@ -1,37 +1,26 @@
-import {combineReducers, configureStore} from "@reduxjs/toolkit";
-import storage from 'redux-persist/lib/storage'
+import {configureStore} from "@reduxjs/toolkit";
 import {apiSlice} from "./ApiSlice/ApiSlice";
-
-import {persistReducer,
-    persistStore,
-    FLUSH,
-    REHYDRATE,
-    PAUSE,
-    PERSIST,
-    PURGE,
-    REGISTER,
-} from "redux-persist";
+import storage from  "redux-persist/lib/storage"
+import {persistReducer} from "redux-persist";
+import {combineReducers} from "@reduxjs/toolkit";
 
 const persistConfig = {
-    key:'root',
-    storage,
+    key: "root",
+    version :1,
+    storage
 }
-const rootReducer = combineReducers({
 
-    [apiSlice.reducePath] : apiSlice.reducer
+const reducer = combineReducers({
+    [apiSlice.reducerPath]: apiSlice.reducer,
+    movies: moviesReducer,
 })
-const persistedReducer = persistReducer(persistConfig,rootReducer)
 
+const persistedReducer = persistReducer(persistConfig,reducer)
 
-const store = configureStore({
+const store  = configureStore({
     reducer : persistedReducer,
-    middleware: (getDefaultMiddleware) =>
-        getDefaultMiddleware({
-            serializableCheck: {
-                ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-                // Ignore these action types
-            },
-        }).concat(apiSlice.middleware),
+    middleware : (getDefaultMiddleware) => getDefaultMiddleware({
+        serializableCheck:false
+    }).concat(apiSlice.middleware),
 })
-export const persist = persistStore(store)
 export default store
