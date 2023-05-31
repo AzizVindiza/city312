@@ -5,12 +5,9 @@ export const  apiSlice = createApi({
     baseQuery : fetchBaseQuery({baseUrl: "https://jsonplaceholder.typicode.com/"}),
     endpoints:(builder) => ({
      getCard : builder.query({
-        query:(arg) => ({
-            query : () => "/users",
-            providesTags: ['Todos']
-        })
+            query : () => "users"
      })
  })
 })
 
- export const  {useGetCard} = apiSlice
+ export const  {useGetCardQuery} = apiSlice

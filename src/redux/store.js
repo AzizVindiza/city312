@@ -12,7 +12,7 @@ const persistConfig = {
 
 const reducer = combineReducers({
     [apiSlice.reducerPath]: apiSlice.reducer,
-    movies: moviesReducer,
+    // movies: moviesReducer,
 })
 
 const persistedReducer = persistReducer(persistConfig,reducer)

@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import {Provider} from "react-redux";
-import {ApiProvider} from "@reduxjs/toolkit/dist/query/react";
-import {apiSlice} from "./redux/ApiSlice/ApiSlice";
 import store from "./redux/store";
 import {PersistGate} from "redux-persist/integration/react";
 import {persistStore} from "redux-persist";
