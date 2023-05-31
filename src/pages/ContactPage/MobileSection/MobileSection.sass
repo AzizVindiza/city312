@@ -1,0 +1,79 @@
+@import "src/sass/base/mixins"
+
+
+.mobileSection
+
+  &__wrapper
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    text-align: center
+  &__h3
+    margin: 40px 0 12px 0
+    @include text(500, 22px, 27px, #000000)
+  &__tel
+
+    display: flex
+    flex-direction: column
+  &__span
+    @include text(500, 18px, 21px, #000000)
+
+  &__mail
+    @include text(500, 17px, 21px, #000000)
+
+  &__number
+    display: flex
+    flex-direction: column
+    row-gap: 10px
+  &__icons
+    display: flex
+    justify-content: center
+    column-gap: 23px
+
+  &__svg
+    width: 48px
+    height: 48px
+
+@media (min-width: 640px)
+  .mobileSection
+    &__wrapper
+      justify-content: space-between
+      display: flex
+
+      flex-direction: inherit
+    &__h3
+      @include text(500, 18px, 21px, #000000)
+    &__span
+      @include text(500, 14px, 16px, #000000)
+
+    &__mail
+      @include text(500, 14px, 16px, #000000)
+
+@media (min-width: 768px)
+  .mobileSection
+    &__wrapper
+      flex-direction: column
+
+    &__h3
+      @include text(500, 20px, 21px, #000000)
+    &__span
+      @include text(500, 18px, 16px, #000000)
+
+    &__mail
+      @include text(500, 18px, 16px, #000000)
+@media (min-width: 1024px)
+  .mobileSection
+    width: 50%
+    &__wrapper
+      flex-direction: column
+
+
+
+
+
+
+
+
+
+
