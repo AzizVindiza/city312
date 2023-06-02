@@ -37,8 +37,8 @@ const NavBar = ({toggleClass}) => {
             {/*<li className='nav__item'><NavLink className="nav__link" to="/services" onClick={() => {*/}
             {/*    toggleClass()*/}
             {/*}}>Услуги</NavLink></li>*/}
-            <Btn text={"ВХОД"} type={"button"} theme={"transparent"}/>
-            <Btn text={"РЕГИСТРАЦИЯ"} type={"button"} theme={'second'} />
+            {/*<Btn text={"ВХОД"} type={"button"} theme={"transparent"}/>*/}
+            {/*<Btn text={"РЕГИСТРАЦИЯ"} type={"button"} theme={'second'} />*/}
 
         </ul>
     );

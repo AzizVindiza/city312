@@ -9,8 +9,15 @@ export const apiSlice = createApi({
         }),
         getPartners: builder.query({
             query : () => "partners/"
+        }),
+        addUser : builder.mutation({
+            query:(body) => ({
+                url: "user",
+                method : "POST",
+                body
+            })
         })
     })
 })
 
-export const {useGetCardQuery,useGetPartnersQuery} = apiSlice
+export const {useGetCardQuery,useGetPartnersQuery,useAddUserMutation} = apiSlice

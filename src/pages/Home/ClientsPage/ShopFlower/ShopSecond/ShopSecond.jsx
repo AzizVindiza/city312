@@ -13,12 +13,12 @@ const ShopSecond = () => {
                     <h2 className="shopSecond__h2">Контакты </h2>
                     <div className="shopSecond__numbers">
                         <div className="shopSecond__num">
-                            <p>+996 555 345 534</p>
-                            <p>+996 555 345 534</p>
+                            <p className={'shopSecond__number'}>+996 555 345 534</p>
+                            <p className={'shopSecond__number shopSecond__number_add'}>+996 555 345 534</p>
                         </div>
                         <div className="shopSecond__num">
-                            <p>+996 555 345 534</p>
-                            <p>+996 555 345 534</p>
+                            <p className={'shopSecond__number'}>+996 555 345 534</p>
+                            <p className={'shopSecond__number'}>+996 555 345 534</p>
                         </div>
                     </div>
                 </div>

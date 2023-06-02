@@ -1,9 +1,8 @@
 @import "src/sass/base/mixins"
 .imageSection
-  background: url("./img.png") no-repeat
+  background: url("./img.png") center/cover no-repeat
   height: 162px
-  background-size: cover
-  background-position: center
+
 
 @media (min-width: 640px)
 
@@ -11,15 +10,15 @@
 @media (min-width: 768px)
 .imageSection
   height: 208px
-  background: url("./768.png")
+  background: url("./768.png") center/cover no-repeat
 
 @media (min-width: 1024px)
 .imageSection
-  background: url("./1024.png") no-repeat
+  background: url("./1024.png") center/cover no-repeat
   height: 304px
 
 
 @media (min-width: 1440px)
 .imageSection
-  background: url("./1440.png") no-repeat
+  background: url("./1440.png") center/cover no-repeat
   height: 304px

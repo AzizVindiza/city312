@@ -3,7 +3,7 @@
   background: #FFFFFF
   box-shadow: 0 0 10.9672px rgba(0, 0, 0, 0.25)
   border-radius: 10.9672px
-  padding: 14px 0 9px 0
+  padding: 14px 0 50px 0
   &__inst
     background: #F00073
     width: 27px
@@ -32,6 +32,8 @@
     display: flex
     justify-content: center
     column-gap: 15px
+  &__number
+    @include text(500,10px,13px,#000000)
   &__soc
     display: flex
     column-gap: 35px
@@ -42,12 +44,46 @@
 
 @media (min-width: 640px)
   .shopSecond
-    width: 184px
-    height: 164px
+
+    padding: 13px
+    &__numbers
+      flex-direction: column
+    &__number
+      &_add
+        margin-bottom: 15px
+    &__wrapper
+      display: flex
+      column-gap: 10px
+      align-items: center
+    &__soc
+      display: flex
+      flex-direction: column
+      row-gap: 12px
+    &__inst, &__fc, &__wh
+      width: 21px
+      height: 21px
+
+
 
 
 @media (min-width: 768px)
+  .shopSecond
+    &__soc
+      flex-direction: row
+      column-gap: 7px
+      margin-top: 0
+    &__wrapper
+      flex-direction: column
+    &__numbers
+      flex-direction: row
+      column-gap: 0
+    &__number
+      width: 101px
+
+
 
 @media (min-width: 1024px)
+  .shopSecond
+    width: 261px
 
 @media (min-width: 1440px)

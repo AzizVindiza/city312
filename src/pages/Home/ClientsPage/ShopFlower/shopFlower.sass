@@ -1,21 +1,24 @@
 @import "src/sass/base/mixins.sass"
 .shopFlower
-
-
-
-
-
-
-
+  padding-bottom: 50px
 
 @media (min-width: 640px)
   .shopFlower
+    padding: 28px 0 40px 0
     &__wrapper
       display: flex
 
 
 @media (min-width: 768px)
+  .shopFlower
+    &__wrapper
+      column-gap: 11px
 
 @media (min-width: 1024px)
+  .shopFlower
+    &__wrapper
+      display: flex
+      justify-content: center
+      column-gap: 102px
 
 @media (min-width: 1440px)
