@@ -22,6 +22,7 @@ import FramePage from "./pages/FramePage/FramePage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 
 import ClientsPage from "./pages/Home/ClientsPage/ClientsPage";
+import PartnerFlowers from "./pages/PartnterFlowers/PartnerFlowers";
 
 
 
@@ -39,6 +40,7 @@ const router = createBrowserRouter(
             <Route path="frame" element={<FramePage/>}/>
 
             <Route path="contact" element={<ContactPage/>}/>
+            <Route path="partner" element={<PartnerFlowers/>}/>
 
             <Route path="clients" element={<ClientsPage/>}/>
 
