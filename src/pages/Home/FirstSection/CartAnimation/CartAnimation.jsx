@@ -1,5 +1,4 @@
 import Card from "react-animated-3d-card";
-import {useState} from "react";
 import card from "./card.png"
 import logo from "./312.svg"
 import city from "./city.svg"
@@ -10,7 +9,7 @@ export default function CartAnimation() {
 
     return (
         <div
-            className="App"
+            className="firstSection-card"
             style={{
                 display: "flex",
                 justifyContent: "center",

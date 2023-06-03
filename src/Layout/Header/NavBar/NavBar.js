@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Navbar.scss"
 import {Link, NavLink} from "react-router-dom";
-import logo from  "../logocity.png"
+import logo from  "../logocity.svg"
 import Btn from "../../../components/Btn/Btn";
 
 
@@ -22,11 +22,9 @@ const NavBar = ({toggleClass}) => {
                 </li>
             </ul>
             <ul className="nav__list">
-                <li className="nav__link">о проекте</li>
-                <Link to={'afisha'} className="nav__link">афиши/акции</Link>
-                <Link to={'discount'} className="nav__link">Скидки</Link>
-                <li className="nav__link">Партнерам</li>
-                <li className="nav__link">Контакты</li>
+                <Link onClick={toggleClass} to={'afisha'} className="nav__link">афиши/акции</Link>
+                <Link onClick={toggleClass} to={'discount'} className="nav__link">Скидки</Link>
+                <Link onClick={toggleClass} to={'contact'} className="nav__link">Контакты</Link>
             </ul>
             {/*<li className="nav__item">*/}
             {/*    <a className="nav__link" href="https://instagram.com">О нас</a>*/}

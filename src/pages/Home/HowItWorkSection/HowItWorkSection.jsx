@@ -1,7 +1,7 @@
 import React from 'react';
 import "./HowItWorkSection.sass"
 import img from './howItWorkSection__img.png'
-import img640 from './howItWorkSection__img640.png'
+
 import img1440 from './howItWorkSection__img1440.png'
 import hand from './howItWorkSection__hand.png'
 import Btn from "../../../components/Btn/Btn";
@@ -96,8 +96,7 @@ const HowItWorkSection = () => {
 
                     <div className="howItWorkSection__img">
                         <picture>
-                            <source media="(min-width:1440px)" srcSet={img1440}/>
-                            <source media="(min-width:640px)" srcSet={img640}/>
+                            <source media="(min-width:640px)" srcSet={img1440}/>
                             <img src={img} alt="скидки"/>
                         </picture>
                     </div>
