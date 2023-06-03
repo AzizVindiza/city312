@@ -25,7 +25,7 @@ const DiscountSwiper = () => {
                     spaceBetween={20}
                     freeMode={true}
                     modules={[FreeMode, Navigation]}
-                    className="mySwiper"
+                    className="discountswiper__mySwiper"
 
 
 

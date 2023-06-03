@@ -25,11 +25,12 @@ const SwiperSecond = () => {
                 className="swiperSecond__mySwiper"
             >
                 <SwiperSlide>
-                </SwiperSlide>
-                <SwiperSlide>
                     <div className="swiperSecond__img">
                         <img src={picture} alt="" className="swiperSecond__pic"/>
                     </div>
+                </SwiperSlide>
+                <SwiperSlide>
+
                 </SwiperSlide>
             </Swiper>
         </section>
