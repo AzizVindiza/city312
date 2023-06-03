@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
-import logo from "./logocity.png"
+import logo from "./logocity.svg"
 import "./Header.scss"
 
 import HamburgerToggle from "./HamburgerToggle/HamburgerToggle";
@@ -19,6 +19,14 @@ const Header = () => {
             duration: 0
         })
     };
+    const closeLink = () => {
+        setActiveHamburger(false);
+        setActiveHamburgerMenu(false);
+        animateScroll.scrollToTop({
+            delay: 0,
+            duration: 0
+        })
+    };
 
 
     return (
@@ -32,13 +40,15 @@ const Header = () => {
                     Единая карта лояльности
                 "/>
                     </NavLink>
-                    <span className="header__title">
+                    <NavLink to={"/"} className="header__title">
                         Единая карта лояльности
-                    </span>
+
+                    </NavLink>
+
                 </h1>
                 <HamburgerToggle toggleClass={toggleClass} isActiveHamburger={isActiveHamburger}/>
                 <nav className={`header__menu ${isActiveHamburger ? "header__menu_active" : null}`}>
-                    <NavBar toggleClass={toggleClass}/>
+                    <NavBar toggleClass={closeLink}/>
                 </nav>
             </div>
         </header>
