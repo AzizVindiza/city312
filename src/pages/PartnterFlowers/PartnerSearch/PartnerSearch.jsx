@@ -1,6 +1,7 @@
 import React from 'react';
 import './PartnerSearch.sass'
 import PartnerCard from "../PartnerCard/PartnerCard";
+import Btn from "../../../components/Btn/Btn";
 
 const PartnerSearch = () => {
     return (
@@ -27,6 +28,7 @@ const PartnerSearch = () => {
                     <PartnerCard/>
                     <PartnerCard/>
                 </div>
+                <button className={"partnerSearch__btn"}>Полный список</button>
 
             </div>
             
