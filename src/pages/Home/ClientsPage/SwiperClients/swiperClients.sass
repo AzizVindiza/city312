@@ -1,19 +1,17 @@
-
+@import "src/sass/base/mixins"
 .swiperClients
 
  &__mySwiper
  .swiper
   width: 100%
   height: 100%
-
-
-
-
   /* Center slide text vertically */
   display: flex
   justify-content: center
   align-items: center
-
+ &__h2
+  @include text(600,32px,38px,#000000)
+  margin-bottom: 42px
 
  .swiper-slide img
   display: block

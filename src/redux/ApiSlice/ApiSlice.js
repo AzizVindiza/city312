@@ -10,6 +10,9 @@ export const apiSlice = createApi({
         getPartners: builder.query({
             query : () => "partners/"
         }),
+        getPlayBill : builder.query({
+            query : (arg) => "playbill/"
+        }),
         addUser : builder.mutation({
             query:(body) => ({
                 url: "user",
@@ -20,4 +23,4 @@ export const apiSlice = createApi({
     })
 })
 
-export const {useGetCardQuery,useGetPartnersQuery,useAddUserMutation} = apiSlice
+export const {useGetCardQuery,useGetPartnersQuery,useAddUserMutation,useGetPlayBillQuery} = apiSlice

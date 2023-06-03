@@ -6,18 +6,30 @@ import "./swiperClients.sass"
 import "swiper/css";
 import AfishaCard from "../../../AfishaPage/SortSection/AfishaCard/AfishaCard";
 
-const SwiperClients = () => {
+const SwiperClients = ({text}) => {
     return (
         <div className={'swiperClients'}>
             <div className="swiperClients__container container">
+                <h2 className="swiperClients__h2">{text}</h2>
                 <Swiper
                     breakpoints={{
-                        393: {
-                            slidesPerView : 1
+
+                            640: {
+                                slidesPerView: 3,
+                                spaceBetween: 20,
+                            },
+                            768: {
+                                slidesPerView: 2,
+                                spaceBetween: 40,
+                            },
+                            1024: {
+                                slidesPerView: 3,
+                                spaceBetween: 50,
+                            },
+                            1440: {
+                            slidesPerView: 3,
+                            spaceBetween: 50,
                         },
-                        640 : {
-                            slidesPerView : 2
-                        }
                     }}
                     className="swiperClients__mySwiper">
                     <SwiperSlide className={'swiperClients__c'}><AfishaCard/></SwiperSlide>

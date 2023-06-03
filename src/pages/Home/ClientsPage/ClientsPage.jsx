@@ -11,10 +11,10 @@ const ClientsPage = () => {
         <div className={'clientsPage'}>
             <ImageSection/>
             <ShopFlower/>
-            <SwiperClients/>
+            <SwiperClients text={"Действующие акции"}/>
             <MapClients/>
             <RecallSection/>
-            <SwiperClients/>
+            <SwiperClients text={"Смотрете другие товары "}/>
         </div>
     );
 };

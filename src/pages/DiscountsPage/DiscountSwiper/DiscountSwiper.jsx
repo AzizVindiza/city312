@@ -13,25 +13,20 @@ import "swiper/css/navigation";
 
 
 const DiscountSwiper = () => {
-    // const [thumbsSwiper, setThumbsSwiper] = useState(null);
-    //
-    // const [_,setSlider] = useState(false)
-    // const [prevEl] = useRef(null)
-    // const [nextEl] = useRef(null)
+    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+
     return (
         <section className={'discountswiper'}>
             <div className="container">
                 <Swiper
-                    // navigation={{
-                    //     prevEl: prevEl.current,
-                    //     nextEl: nextEl.current
-                    // }}
+
                     slidesPerView={7}
                     spaceBetween={20}
                     freeMode={true}
                     modules={[FreeMode, Navigation]}
                     className="mySwiper"
-                    // onInit={() => setSlider(true)}
+
 
 
                 >

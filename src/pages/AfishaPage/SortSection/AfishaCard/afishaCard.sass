@@ -5,6 +5,10 @@
   border-radius: 13px
   &__img
     position: relative
+  &__pic
+    height: 166px
+
+
   &__overlay
     position: absolute
     top: 0
@@ -65,14 +69,14 @@
     @include text12
     color: #00000040
   &__p
-    @include  text(300,15px,17px,#000000)
+    @include  text(300,15px,17px,#00000048)
     @include Exo
 
   &__price
     @include text17
     color: $color0077FF
 @media (min-width: 640px)
-  .discount
+  .afishaCard
     width: 252px
     &__price
       @include text(600,12px,14px,#0077FF)
@@ -86,7 +90,7 @@
 
 
 @media (min-width: 768px)
-  .discount
+  .afishaCard
     width: 314px
     &__price
       @include text(600,12px,14px,#0077FF)
@@ -99,7 +103,7 @@
 
 
 @media (min-width: 1024px)
-  .discount
+  .afishaCard
     width: 416px
     &__price
       @include text(600,12px,14px,#0077FF)
@@ -122,6 +126,8 @@
 
     &__p
       @include text(300,14px,16px,#000000)
+    &__img
+      height: 180px
 
 
 
