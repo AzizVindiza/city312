@@ -11,9 +11,11 @@ const PartnersSection = () => {
                     ПАРТНЕРЫ
                 </h2>
                 <div className="partnersSection__cards">
-                            <PartnerCard  />
-
-
+                    {
+                        data ?  data.map((item) => (
+                            <PartnerCard key={item.id} item={item} />
+                        )) : "error"
+                    }
                 </div>
             </div>
         </section>
