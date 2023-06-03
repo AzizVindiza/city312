@@ -20,6 +20,9 @@ const PartnerCard = () => {
                     </h2>
                     <p className="PartnerCard__p">
                         Утром у вас есть время до обеда, чтобы осмотреть старый город Ош.
+                        Утром у вас есть время до обеда, чтобы осмотреть старый город Ош.
+
+
                     </p>
                     <div className="PartnerCard__box">
                         <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,7 +48,9 @@ const PartnerCard = () => {
                                 </linearGradient>
                             </defs>
                         </svg>
-                        <Btn theme={"partnerCard"} text={"Подписаться"}/>
+                        <button className="PartnerCard__btn">
+                            Подписаться
+                        </button>
 
                     </div>
                 </div>

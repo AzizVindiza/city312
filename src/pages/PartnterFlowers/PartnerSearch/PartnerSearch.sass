@@ -19,11 +19,23 @@
     text-align: center
     width: 100%
     padding: 10px 15px
+  &__btn
+
+    display: flex
+    margin: 35px auto
+    padding: 13px 42px
+    background: linear-gradient(180deg, #FFE25A 0%, #FFA852 100%)
+    border-radius: 6px
+    @include text(600,12px,14px, #000000)
+
 @media (min-width: 640px)
   .partnerSearch
-
     &__row
       width: 100%
       display: flex
       flex-wrap: wrap
       justify-content: space-between
+@media (min-width: 768px)
+  .partnerSearch
+    &__btn
+      @include text(600,14px,16px, #000000)
