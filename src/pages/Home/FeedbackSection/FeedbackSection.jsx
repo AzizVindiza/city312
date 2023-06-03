@@ -50,23 +50,24 @@ const FeedbackSection = () => {
                             }
                         })} className={`form__input ${errors.number ? 'form__input_error' : ''}`} placeholder='+996 (000) 000 000'/>
 
+                        <span className='form__error'>
+                            {errors.phone && errors.phone?.message}
+                        </span>
                     </label>
-                    <p className='form__error'>
-                        {errors.phone && errors.phone?.message}
-                    </p>
+
                     <label className='form__label'>
                         <textarea {...register('message', {
                             required: {
-                                message: 'сообщение обязательно к заполнению',
+                                message: 'обязательно к заполнению',
                                 value: true
                             }
                         })} className={`form__text-area ${errors.message ? 'form__text-area_error' : ''}`} placeholder='СООБЩЕНИЕ' />
-
+                        <span className='form__error'>
+                            {errors.message && errors.message?.message}
+                        </span>
                     </label>
-                    <p className='form__error'>
-                        {errors.message && errors.message?.message}
-                    </p>
-                    <Btn text={"отправить"} type={"submit"} theme={""}/>
+
+                    <Btn text={"отправить"} type={"submit"} theme={"black"}/>
 
                 </form>
             </div>

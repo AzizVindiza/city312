@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import picture from "./optimize 1.png"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
