@@ -33,15 +33,22 @@
       font-weight: 600
     &-h4
       @include text9
+    &__pic
+      height: 141px
+
 
   &__company
-    padding: 2px 30px 2px 3px
+    padding: 5px 30px 2px 3px
     background: $colorFFF
     border-radius: 13px
     display: flex
     justify-content: center
     align-items: center
     column-gap: 9px
+  &__logo
+    width: 25px
+    height: 25px
+    border-radius: 50%
 
   &__txt
     padding: 7px
@@ -114,6 +121,8 @@
 @media (min-width: 1440px)
   .discount
     width: 387px
+
+
     &__price
       @include text(600,12px,14px,#0077FF)
 

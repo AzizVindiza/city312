@@ -7,12 +7,15 @@ const DiscountCard = ({item}) => {
     return (
         <div className="discount">
             <div className="discount__img">
-                <img src={item.image} alt=""/>
+                <div className="discount__picture">
+                    <img className={'discount__pic'} src={item.image} alt=""/>
+                </div>
+
                 <div className="discount__overlay">
                     <div className="discount__overlay-top">
                         <div className="discount__company">
                             <div className="discount__logo">
-                                <img src={item.partners.image} alt=""/>
+                                <img src={item.partners.image} alt={item.partners.image}/>
                             </div>
                             <div className="discount__overlay-txt">
                                 <h3 className="discount__overlay-h3">Florissimo</h3>
@@ -23,7 +26,7 @@ const DiscountCard = ({item}) => {
                     </div>
                     <div className="discount__overlay-bottom">
                         <div className="discount__overlay-percent">
-                            -{item.discounts}%
+                            -{item.discounts}
                         </div>
                     </div>
                 </div>

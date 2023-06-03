@@ -32,7 +32,7 @@ import {A11y, Navigation, Pagination, Scrollbar} from "swiper";
                         nextEl: nextRef.current,
                     }}
                     modules={[Navigation,Pagination,Scrollbar,A11y]}
-                    className="mySwiper"
+                    className="swiperAfisha__mySwiper"
                 >
                     <SwiperSlide>
                         <div className="swiperAfisha__pic">

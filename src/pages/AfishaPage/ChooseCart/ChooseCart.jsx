@@ -9,7 +9,7 @@ const ChooseCart = () => {
         <div className={'chooseCart'}>
             <div className="container chooseCart__container">
                 <div className="chooseCart__wrapper">
-                   <AfishaCard/>
+                   {/*<AfishaCard/>*/}
                 </div>
 
                 <div className="calendarSection__click">
