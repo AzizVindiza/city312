@@ -1,7 +1,5 @@
 @import "src/sass/base/mixins"
 .map
-  &__container
-    padding: 25px 0 50px 0
   iframe
     width: 100%
     height: 404px
@@ -12,6 +10,8 @@
     flex-direction: column
     justify-content: center
     row-gap: 30px
+    margin-top: 30px
+    padding: 50px
   &__ul
     display: flex
     justify-content: center
@@ -22,3 +22,25 @@
     &_h
       margin-bottom: 10px
       @include text17
+
+@media (min-width: 640px)
+  .map
+    &__title
+      display: none
+    &__container
+      display: flex
+      flex-direction: row-reverse
+    &__text
+      width: 50%
+      padding: 70px 0 70px 120px
+      justify-content: flex-start
+      margin-top: 0
+    &__google
+      width: 50%
+
+
+@media (min-width: 768px)
+
+@media (min-width: 1024px)
+
+@media (min-width: 1440px)

@@ -3,7 +3,7 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import { FreeMode, Navigation } from "swiper";
 // Import Swiper styles
 import "./discountswiper.sass"
-import React, {useRef, useState} from "react";
+import React from "react";
 import pic from "./pic.png"
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -13,7 +13,7 @@ import "swiper/css/navigation";
 
 
 const DiscountSwiper = () => {
-    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+    // const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
 
     return (

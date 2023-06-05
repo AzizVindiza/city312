@@ -10,7 +10,7 @@
       flex-direction: column
       row-gap: 20px
       &__label
-        box-shadow: 0px 0px 3.58696px rgba(0, 0, 0, 0.25), inset 0px 0px 4.4837px #FFFFFF, inset 0px 0.896739px 4.4837px rgba(0, 0, 0, 0.25)
+        box-shadow: 0 0 3.58696px rgba(0, 0, 0, 0.25), inset 0px 0px 4.4837px #FFFFFF, inset 0px 0.896739px 4.4837px rgba(0, 0, 0, 0.25)
         border-radius: 8.96739px
         padding: 15px 20px
         width: 100%
@@ -23,3 +23,39 @@
         height: 120px
         @include text17
         font-weight: 500
+        width: 100%
+      &__error
+        @include text17
+        color: darkred
+
+
+@media (min-width: 640px)
+
+
+@media (min-width: 768px)
+
+@media (min-width: 1024px)
+  .feedback
+    &__container
+      padding: 100px 0
+      .form
+        padding: 20px 0
+        column-gap: 20px
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: row
+        row-gap: 20px
+        &__input
+          height: 47px
+          @include text(800,22px,27px,#000)
+          &::placeholder
+            @include text(800,22px,27px,#2F2F2F)
+
+        &__text-area
+          height: 47px
+          @include text(800,24px,27px,#000)
+
+
+
+@media (min-width: 1440px)

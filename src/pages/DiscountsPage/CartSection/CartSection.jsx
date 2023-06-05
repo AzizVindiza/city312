@@ -7,7 +7,6 @@ import {useGetCardQuery} from "../../../redux/ApiSlice/ApiSlice";
 
 const CartSection = () => {
    const {data} = useGetCardQuery()
-    console.log(data)
     return (
         <div className={'cartSection'}>
             <div className="container cartSection__container">
