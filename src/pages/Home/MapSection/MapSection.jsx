@@ -20,10 +20,9 @@ const MapSection = () => {
                 <div className="map__text">
                     <h3 className="map__h2 title">Наш адрес
                     </h3>
-                    <h3 className="map__h3">Бишкек</h3>
+                    <h3 className="map__h3">Кыргызская республика, г. Бишкек, ул. Тоголок Молдо 3Б</h3>
                     <ul className="map__ul">
-                        <li className="map__li map__li_h">Офис</li>
-                        <li className="map__li">Бишкек</li>
+                        <li className="map__li">Телефон:</li>
                         <li className="map__li">+996 558 999 000</li>
                     </ul>
                 </div>

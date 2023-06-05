@@ -14,8 +14,7 @@ const MobileSection = () => {
                             Телефон
                         </h3>
                         <div className="mobileSection__number">
-                            <span className="mobileSection__span">+ 996 (502) 031222</span>
-                            <span className="mobileSection__span">+ 996 (502) 031222</span>
+                            <a  href='tel:+996502031222' className="mobileSection__span">+ 996 (502) 031222</a>
                         </div>
                     </div>
                     <div className="mobileSection__email">
@@ -23,7 +22,7 @@ const MobileSection = () => {
                             Почта
                         </h3>
                         <div className="mobileSection__mail">
-                           office@city312.kg
+                            @city312@inbox.ru
                         </div>
                     </div>
                     <div className="mobileSection__social">

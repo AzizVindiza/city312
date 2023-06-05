@@ -24,8 +24,7 @@ const Footer = () => {
                     <div className="footer__box">
                         <div className="footer__block">
                             <h3 className="footer__contact">Контакты</h3>
-                            <h4 className="footer__num">+ 996 (502) 031222</h4>
-                            <h4 className="footer__num">+ 996 (505) 031222</h4>
+                            <a href={'tel:+996502031222'} className="footer__num">+ 996 (502) 031222</a>
                             <h3 className="footer__address">адрес</h3>
                             <p className="footer__street">ул.Киевская 77</p>
                         </div>
@@ -84,10 +83,9 @@ const Footer = () => {
                     </ul>
                     <div className="footer__block">
                         <h3 className="footer__contact">Контакты</h3>
-                        <h4 className="footer__num">+ 996 (502) 031222</h4>
-                        <h4 className="footer__num">+ 996 (502) 031222</h4>
+                        <a href={'tel:+ 996 (502) 031222'} className="footer__num">+ 996 (502) 031222</a>
                         <h3 className="footer__address">адрес</h3>
-                        <p className="footer__street">ул.Киевская 77</p>
+                        <p className="footer__street">ул.Тоголок Молдо 3Б</p>
                     </div>
                     <div className="footer__come">
 
