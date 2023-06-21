@@ -1,43 +1,47 @@
 @import "src/sass/base/mixins.sass"
 .cometSection
-  .container
+
+  &__cometSection__container
     padding: 0 0 49px 0
   &__h2
    @include text(500, 16px, 19px, #000)
    margin-bottom: 17px
 
-  &__box
-    padding: 12px 19px 14px 20px
-    background: #FFFFFF
-    box-shadow: 0 0 11.4996px rgba(0, 0, 0, 0.25)
-    border-radius: 15.3327px
-    display: flex
-    flex-direction: column
-    row-gap: 15px
-
   &__person
+    position: relative
+    width: 340px
+    height: 220px
+    background: #F3F3F3
+    padding-top: 65px
+  &__wrapper
     display: flex
-    column-gap: 15px
-    width:  327px
-  &__img
-    width: 32px
-    height: 32px
-    border-radius: 50%
-  &__name, &__txt
-    @include text(500, 12px, 14px, #000)
-  &__content
+
+    column-gap: 35px
+    justify-content: space-between
+
+  &__block
     display: flex
-    flex-direction: column
+    column-gap: 23px
     align-items: center
-    row-gap: 13px
-    margin-top: 34px
+  &__logo
+    width: 60px
+    height: 60px
+  &__label
+    background: #F3F3F3
+    padding: 17px 0 17px 32px
+    width: 700px
+
+  &__input
+    width: 100%
+    background: transparent
+
 
 
 
 
 @media (min-width: 640px)
   .cometSection
-    &__container
+    &__cometSection__container
       padding: 0 42px 0 0
     &__content
       flex-direction: row
@@ -53,16 +57,16 @@
 
 @media (min-width: 768px)
   .cometSection
-    &__container
+   &__cometSection__container
       padding: 0 57px 0 0
-    &__person
+   &__person
       display: flex
       column-gap: 15px
       width:  645px
 
 @media (min-width: 1024px)
   .cometSection
-    &__container
+    &__cometSection__container
       padding: 0 34px  0 0
       display: flex
       align-items: center
@@ -76,9 +80,26 @@
 
 @media (min-width: 1440px)
   .cometSection
-    &__container
+    margin-bottom: 111px
+    &__cometSection__container
       padding: 0 52px 0 0
     &__person
+      width: 340px
+      height: 220px
+      padding: 65px 21px 56px 21px
+    &__name
+      @include text(500, 20px, 24px, #000)
+      margin-bottom: 12px
+    &__wrapper
       display: flex
-      column-gap: 15px
-      width:  790px
+      column-gap: 35px
+    &__block
+      display: flex
+      column-gap: 23px
+      align-items: center
+    &__logo
+      width: 60px
+      height: 60px
+    &__input
+      width: 100%
+

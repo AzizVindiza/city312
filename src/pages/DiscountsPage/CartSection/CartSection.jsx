@@ -6,17 +6,21 @@ import {useGetCardQuery} from "../../../redux/ApiSlice/ApiSlice";
 
 
 const CartSection = () => {
-   const {data} = useGetCardQuery()
+   // const {data} = useGetCardQuery()
     return (
         <div className={'cartSection'}>
             <div className="container cartSection__container">
                 <h2 className="cartSection__h2">Все скидки </h2>
                 <div className="cartSection__wrapper">
-                    {
-                       data ?  data.map((item) => (
-                            <DiscountCard key={item.id} item={item} />
-                        )) : "error"
-                    }
+                    {/*{*/}
+                    {/*   data ?  data.map((item) => (*/}
+
+                    {/*    )) : "error"*/}
+                    {/*}*/}
+                    <DiscountCard/>
+                    <DiscountCard/>
+                    <DiscountCard/>
+                    <DiscountCard/>
 
                  </div>
                 <div className="cartSection__wrapp">

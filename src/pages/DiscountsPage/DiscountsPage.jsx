@@ -16,7 +16,6 @@ const DiscountsPage = () => {
             <SwiperSecond/>
             <SortSection/>
             <CartSection/>
-
         </>
     );
 };
