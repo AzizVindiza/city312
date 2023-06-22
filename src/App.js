@@ -21,6 +21,10 @@ import FramePage from "./pages/FramePage/FramePage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import ClientsPage from "./pages/Home/ClientsPage/ClientsPage";
 import PartnerFlowers from "./pages/PartnterFlowers/PartnerFlowers";
+import Profile from "./pages/ProfilePage/Profile";
+import EditSection from "./pages/ProfilePage/EditSection/EditSection";
+import BankSection from "./pages/ProfilePage/BankSection/BankSection";
+import BankCardSection from "./pages/ProfilePage/BankCardSection/BankCardSection";
 
 
 const router = createBrowserRouter(
@@ -38,6 +42,11 @@ const router = createBrowserRouter(
             <Route path="contact" element={<ContactPage/>}/>
             <Route path="partner" element={<PartnerFlowers/>}/>
             <Route path="clients" element={<ClientsPage/>}/>
+            <Route path="profile" element={<Profile/>}/>
+            <Route path="profile/edit" element={<EditSection/>}/>
+            <Route path="profile/bank" element={<BankSection/>}/>
+            <Route path="profile/card" element={<BankCardSection/>}/>
+
 
         </Route>
     )

@@ -1,0 +1,53 @@
+@import "./src/sass/base/mixins"
+
+
+.user
+  &__container
+    display: flex
+    margin: 0 auto
+  &__wrapper
+    margin: 0 auto
+    padding: 0 28px
+    width: 300px
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
+  &__h2
+    padding: 38px 0 18px 0
+    display: flex
+    justify-content: center
+  &__box
+    padding: 16px 0 40px 0
+    display: flex
+    column-gap: 7px
+  &__phone
+    text-align: center
+    width: 100%
+    padding: 8px 0
+    background: linear-gradient(0deg, #7EC9F5 0%, #3957ED 97.5%)
+    @include text(500,12px,133%,#FFF)
+    border-radius: 4.46108px
+  &__redux
+    text-align: center
+    width: 100%
+    padding: 8px 0
+    background: linear-gradient(0deg, #7EC9F5 0%, #3957ED 97.5%)
+    @include text(500,14px,133%,#FFF)
+    border-radius: 4.46108px
+  &__row
+    column-gap: 10px
+    display: flex
+  &__img
+    width: 50px
+  &__ul
+    padding-bottom: 40px
+    display: flex
+    flex-direction: column
+    row-gap: 25px
+  &__li
+    display: flex
+    column-gap: 16px
+    svg
+      width: 18px
+      height: 14px
+  &__link
+    @include text(500,16px,133%,#000)
+
