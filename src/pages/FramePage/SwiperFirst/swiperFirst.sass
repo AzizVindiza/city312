@@ -1,0 +1,24 @@
+@import "src/sass/base/mixins"
+.swiperFirst
+  &__container
+    position: relative
+  padding-bottom: 66px
+  .swiper-pagination
+    display: none
+  &__h2
+    @include text(600,32px,39px,#000000)
+    margin: 35px 0 12px 0
+  &__prev
+    position: absolute
+    width: 20px
+    height: 20px
+    left: -30px
+    top: 50%
+  &__next
+    position: absolute
+    width: 20px
+    height: 20px
+    right: -30px
+    top: 50%
+
+
