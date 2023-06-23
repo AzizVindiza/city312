@@ -9,71 +9,82 @@ const BankSection = () => {
             <div className="bank__container container">
                 <div className="bank__wrapper">
                     <h2 className="bank__h2">Моя единая карта лояльности</h2>
-                    <div className="bank__img">
-                        <img src={bank} alt=""/>
+                    <div className="bank__row">
+                        <div className="bank__img">
+                            <img src={bank} alt=""/>
+                        </div>
+                        <div className="bank__qr">
+                            <img src={qr} alt=""/>
+                            <p className="bank p">
+
+                            </p>
+                        </div>
                     </div>
-                    <div className="bank__qr">
-                        <img src={qr} alt=""/>
-                        <p className="bank p">
-                            
-                        </p>
-                    </div>
-                    <div className="bank__box">
+                    <div className="bank__flex">
+                        <div className="bank__box">
                         <span className="bank__span">
                             мои баллы
                         </span>
-                        <h3 className="bank__h3">
-                            100500 б.
-                        </h3>
-                    </div>
-                    <div className="bank__box">
+                            <h3 className="bank__h3">
+                                100500 б.
+                            </h3>
+                        </div>
+                        <div className="bank__box">
                         <span className="bank__span">
                             Cэкономлено
                         </span>
-                        <h3 className="bank__h3">
-                            15000 сом
-                        </h3>
-                    </div>
-                    <div className="bank__box">
+                            <h3 className="bank__h3">
+                                15000 сом
+                            </h3>
+                        </div>
+                        <div className="bank__box">
                         <span className="bank__span">
                             Генерация URL
                         </span>
-                        <h3 className="bank__h3">
-                            www/behance.ru/
-                        </h3>
+                            <h3 className="bank__h3">
+                                www/behance.ru/
+                            </h3>
+                        </div>
                     </div>
-                    <div className="bank__box">
+                    <div className="bank__flex">
+                        <div className="bank__box">
                         <span className="bank__span">
                             № Карты
                         </span>
-                        <h4 className="bank__h4_number">
-                            1005 0055 5153
-                        </h4>
-                    </div>
-                    <div className="bank__box">
+                            <h4 className="bank__h4_number">
+                                1005 0055 5153
+                            </h4>
+                        </div>
+                        <div className="bank__box">
                         <span className="bank__span">
                             Обладатель
                         </span>
-                        <h4 className="bank__h4">
-                            Женишов Муратбек Бека
-                        </h4>
+                            <h4 className="bank__h4">
+                                Женишов Муратбек Бека
+                            </h4>
+                        </div>
                     </div>
-                    <div className="bank__box">
+                    <div className="bank__flex">
+                        <div className="bank__box">
                         <span className="bank__span">
                             Куплено
                         </span>
-                        <h4 className="bank__h4">
-                            01.05.2023
-                        </h4>
-                    </div>
-                    <div className="bank__box">
+                            <h4 className="bank__h4">
+                                01.05.2023
+                            </h4>
+                        </div>
+                        <div className="bank__box">
                         <span className="bank__span">
                             Дейтсвителен до
                         </span>
-                        <h4 className="bank__h4">
-                            01.05.2023
-                        </h4>
+                            <h4 className="bank__h4">
+                                01.05.2023
+                            </h4>
+                        </div>
                     </div>
+
+
+
                 </div>
             </div>
 

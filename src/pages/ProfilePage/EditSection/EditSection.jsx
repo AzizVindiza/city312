@@ -7,9 +7,7 @@ import UserSection from "../UserSection/UserSection";
 const EditSection = () => {
     return (
         <section className="edit">
-
             <div className="edit__container container">
-                <UserSection/>
                 <div className="edit__wrapper">
                     <form className="edit__form" action="">
                         <h2 className="edit__h2">Редактировать профиль</h2>
@@ -17,14 +15,17 @@ const EditSection = () => {
                             <img src={photo} alt=""/>
                             <a href="">сменить фото</a>
                         </div>
-                        <label htmlFor="" className="edit__label">
-                            <span className="edit__span">Фамилия</span>
-                            <input type="text" className="edit__input"/>
-                        </label>
-                        <label htmlFor="" className="edit__label">
-                            <span className="edit__span">Имя</span>
-                            <input type="text" className="edit__input"/>
-                        </label>
+                        <div className="edit__row">
+                            <label htmlFor="" className="edit__label">
+                                <span className="edit__span">Фамилия</span>
+                                <input type="text" className="edit__input"/>
+                            </label>
+                            <label htmlFor="" className="edit__label">
+                                <span className="edit__span">Имя</span>
+                                <input type="text" className="edit__input"/>
+                            </label>
+                        </div>
+
                         <label htmlFor="" className="edit__label">
                             <span className="edit__span">Номер телефона</span>
                             <input type="text" className="edit__input"/>

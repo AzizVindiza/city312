@@ -27,9 +27,9 @@ const UserSection = () => {
                         <div className="user__phone">
                             +996 555 55 55 55
                         </div>
-                        <Link to={"edit"} className="user__redux">
+                        <div className="user__redux">
                             Редактировать
-                        </Link>
+                        </div>
 
                     </div>
                     <div className="user__column">

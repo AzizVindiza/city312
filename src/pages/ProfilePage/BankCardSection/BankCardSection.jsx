@@ -22,7 +22,7 @@ const BankCardSection = () => {
                             <span className="bankCard__span" placeholder={"ММ/ГГ"}>
                                 Срок действия карты
                             </span>
-                            <input type="text"/>
+                            <input placeholder={"MM/ГГ"} type="text"/>
                         </label>
                         <label htmlFor="" className="bankCard__label">
                             <span className="bankCard__span">
