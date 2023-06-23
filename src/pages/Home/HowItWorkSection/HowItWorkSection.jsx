@@ -90,7 +90,7 @@ const HowItWorkSection = () => {
                             ский спрос на услуги и товары продавца.
                         </p>
                         <a href="https://instagram.com" className="howItWorkSection__link640">
-                            <Btn text="оформить карту" type={"button"} />
+                            <Btn theme={"how"} text="оформить карту" type={"button"} />
                         </a>
                     </div>
 

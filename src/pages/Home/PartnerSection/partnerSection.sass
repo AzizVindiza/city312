@@ -1,0 +1,32 @@
+@import "src/sass/base/mixins"
+
+
+.partner
+  display: none
+
+
+
+
+@media (min-width: 1440px)
+  .partner
+    padding: 100px 0
+    display: flex
+    border: 1px solid black
+
+    &__container
+      display: flex
+      column-gap: 150px
+    &__wrapper
+      display: flex
+      flex-direction: column
+      justify-content: center
+      width: 579px
+      row-gap: 25px
+
+    &__h2
+      @include text(700,28px,133%,#000)
+    &__p
+      @include text(400,18px,133%,#000)
+
+
+

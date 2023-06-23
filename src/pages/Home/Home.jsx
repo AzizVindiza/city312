@@ -8,6 +8,7 @@ import PartnersSection from "./PartnersSection/PartnersSection";
 import MapSection from "./MapSection/MapSection";
 import FeedbackSection from "./FeedbackSection/FeedbackSection";
 import OldSection from "./OldSection/OldSection";
+import PartnerSection from "./PartnerSection/PartnerSection.";
 const Home = () => {
     return (
         <>
@@ -15,6 +16,7 @@ const Home = () => {
             <HowItWorkSection/>
             <OldSection/>
             <BenefitsSection/>
+            <PartnerSection/>
             <DiscountsSection/>
             <PopularSection/>
             <PartnersSection/>

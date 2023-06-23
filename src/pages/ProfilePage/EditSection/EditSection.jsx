@@ -2,11 +2,14 @@ import React from 'react';
 import './editSection.sass'
 import photo from "./photo.svg"
 import Btn from "../../../components/Btn/Btn";
+import UserSection from "../UserSection/UserSection";
 
 const EditSection = () => {
     return (
         <section className="edit">
+
             <div className="edit__container container">
+                <UserSection/>
                 <div className="edit__wrapper">
                     <form className="edit__form" action="">
                         <h2 className="edit__h2">Редактировать профиль</h2>
