@@ -1,0 +1,75 @@
+@import "./src/sass/base/mixins"
+
+.subscriptionCard
+  width: 333px
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
+
+  &__container
+    display: flex
+    flex-direction: column
+    text-align: center
+  &__wrapper
+    display: flex
+    flex-direction: column
+    row-gap: 25px
+    padding: 18px 20px
+  &__img
+    width: 100%
+
+  &__box
+    align-items: center
+    row-gap: 15px
+    display: flex
+    flex-direction: column
+    button
+      border-radius: 5px
+      padding: 10px 0
+      width: 70%
+  &__btn1
+    background: white
+    border: 1px solid #7EC9F5
+    color: #0077FF
+  &__btn2
+    color: #FFFFFF
+    background: linear-gradient(#7EC9F5,#3957ED)
+
+
+@media (min-width: 640px)
+
+@media (min-width: 768px)
+  .subscriptionCard
+    width: 240px
+    &__wrapper
+      row-gap: 0
+    &__h2
+      @include text(700,15px,133%,#000)
+    &__box
+
+      row-gap: 7px
+      button
+        padding: 3px 0
+
+
+
+
+
+
+@media (min-width: 1024px)
+  .subscriptionCard
+    width: 200px
+    &__h2
+      @include text(700,12px,133%,#000)
+    &__box
+      justify-content: inherit
+      button
+        font-family: Inter,sans-serif
+    &__btn1
+      @include text(500,12px,133%,#0077FF)
+    &__btn2
+      @include text(500,12px,133%,#FFFFFF)
+
+
+@media (min-width: 1440px)
+
+
+

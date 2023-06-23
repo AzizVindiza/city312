@@ -11,6 +11,9 @@ const SubscriptionSection = () => {
                         Подписки
                     </h2>
                     <div className="subscription__box">
+
+                        <SubscriptionCard/>
+                        <SubscriptionCard/>
                         <SubscriptionCard/>
 
 
