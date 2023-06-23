@@ -7,6 +7,9 @@ import "./profile.sass"
 import EditSection from "./EditSection/EditSection";
 import SettingsSection from "./SettingsSection/SettingsSection";
 import SubscriptionSection from "./SubscriptionSection/SubscriptionSection";
+import CometSection from "./CommetSection/CometSection";
+import CardLike from "./LikeSection/CardLike/CardLike";
+import LikeSection from "./LikeSection/LikeSection";
 
 
 const Profile = () => {
@@ -15,7 +18,7 @@ const Profile = () => {
         <div className={'profile profile__container container'}>
             <UserSection/>
             {category === "Моя карта" ? <BankSection/> : category === "Добавить банковскую карту" ?  <BankCardSection/> : category === "Настройки" ? <SettingsSection/> :
-                category === "Подписки" ? <SubscriptionSection/>   : <EditSection/> }
+                category === "Подписки" ? <SubscriptionSection/>   : category === "Комментарии" ? <CometSection/> : category === 'Лайки' ? <LikeSection/> : <EditSection/> }
         </div>
 
     );

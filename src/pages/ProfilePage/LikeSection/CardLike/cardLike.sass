@@ -1,0 +1,74 @@
+@import "src/sass/base/mixins"
+
+.cardLike
+  position: relative
+  display: flex
+  column-gap: 10px
+  border-bottom:  1px solid #00000030
+  margin-bottom: 35px
+  padding-bottom: 39px
+
+  &__like
+    width: 15px
+    height: 15px
+    position: absolute
+    right: 0
+  &__img
+    width: 107px
+    height: 77px
+  &__h3
+    @include text(400,12px,131%,#000000)
+    opacity: 0.5
+  &__h4
+    @include text(700,16px,31px,#EAA700)
+
+  &__p
+    @include text(500,10px,21px,#000000)
+    opacity: 0.5
+
+
+  &__svg
+    width: 15px
+    height: 15px
+  &__open
+    @include text(100,13px,131%,#0077ff)
+  &__wrapper
+    display: flex
+    column-gap: 5px
+
+
+@media (min-width: 640px)
+
+
+@media (min-width: 768px)
+
+@media (min-width: 1024px)
+ .cardLike
+   column-gap: 25px
+   &__img
+    width: 206px
+    height: 144px
+   &__like
+    width: 25px
+    height: 25px
+    position: absolute
+    right: 0
+   &__h3
+    @include text(400,15px,131%,#000000)
+    opacity: 0.5
+   &__h4
+    @include text(700,20px,31px,#EAA700)
+    margin-bottom: 5px
+   &__p
+    @include text(500,15px,11px,#000000)
+    opacity: 0.5
+    margin-bottom: 14px
+
+   &__svg
+    width: 15px
+    height: 15px
+   &__open
+    @include text(100,16px,131%,#0077ff)
+
+
+@media (min-width: 1440px)
