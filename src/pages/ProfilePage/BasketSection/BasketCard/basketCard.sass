@@ -1,0 +1,83 @@
+@import "src/sass/base/mixins"
+.basketCard
+  border-bottom: 1px solid #00000040
+  display: flex
+  padding-bottom: 28px
+  column-gap: 10px
+  margin-bottom: 41px
+  &__img
+    width: 177px
+    height: 77px
+  &__h2
+    @include text(700,13px,22px,#EAA700)
+    margin-bottom: 5px
+  &__p
+    @include text(500,11px,20px,#000000)
+    margin-bottom: 4px
+    width: 136px
+  &__addCount
+    display: flex
+    column-gap: 5px
+    align-items: center
+  &__btn
+    background: transparent
+    font-size: 20px
+  &__span
+    @include text(100,15px,131%,#000000)
+  &__num
+    display: flex
+    column-gap: 12px
+    align-items: center
+  &__h3
+    @include text(100,11px,131%,#00000050)
+    text-decoration: line-through
+  &__h4
+    @include text(100,14px,131%,#0077FF)
+
+
+
+
+@media (min-width: 640px)
+
+
+@media (min-width: 768px)
+
+@media (min-width: 1024px)
+
+@media (min-width: 1440px)
+  .basketCard
+    width: 500px
+    border-right: 1px solid #00000040
+    column-gap: 26px
+    &__img
+      width: 200px
+      height: 160px
+    &__h2
+      @include text(700,18px,22px,#EAA700)
+      margin-bottom: 5px
+    &__p
+      @include text(500,16px,20px,#000000)
+      width: 179px
+
+    &__addCount
+      display: flex
+      column-gap: 13px
+      align-items: center
+      margin-bottom: 17px
+    &__btn
+      background: transparent
+      font-size: 26px
+    &__span
+      @include text(100,15px,131%,#000000)
+    &__num
+      display: flex
+      column-gap: 12px
+      align-items: center
+    &__h3
+      @include text(100,14px,131%,#00000050)
+      text-decoration: line-through
+    &__h4
+      @include text(100,20px,131%,#0077FF)
+
+
+

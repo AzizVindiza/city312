@@ -1,0 +1,82 @@
+@import "src/sass/base/mixins"
+.basket
+  padding-top: 39px
+
+  &__h2
+    @include text(100,24px,131%,#000000)
+    margin-bottom: 25px
+  &__h3
+    @include text(500,20px,24px,#000000)
+    margin-bottom: 15px
+    border-bottom: 1px solid #000000
+    padding-bottom: 8px
+  &__product
+    display: flex
+    column-gap: 65px
+    border-bottom: 1px solid #000000
+    padding-bottom: 15px
+    margin-bottom: 13px
+  &__h4
+    @include text(500,16px,24px,#000000)
+  &__wrapp
+    display: flex
+    column-gap:  65px
+    background: #FFEDB1
+    padding: 10px 0 10px 5px
+    margin-bottom: 35px
+  &__h5
+    @include text(500,16px,24px,#000000)
+  &__left
+    margin-bottom: 52px
+
+
+
+
+
+
+
+
+@media (min-width: 640px)
+
+
+@media (min-width: 768px)
+
+@media (min-width: 1024px)
+  .basket
+    &__wrapper
+      display: flex
+      column-gap: 11px
+    &__h2
+      @include text(100,20px,131%,#000000)
+      margin-bottom: 13px
+    &__h3
+      @include text(500,13px,24px,#000000)
+      margin-bottom: 15px
+      border-bottom: 1px solid #000000
+      padding-bottom: 14px
+    &__product
+      display: flex
+      column-gap: 65px
+      border-bottom: 1px solid #000000
+      padding-bottom: 15px
+      margin-bottom: 13px
+    &__h4
+      @include text(500,12px,24px,#000000)
+    &__wrapp
+      display: flex
+      column-gap:  15px
+      background: #FFEDB1
+      padding: 10px 0 10px 5px
+      margin-bottom: 35px
+    &__h5
+      @include text(500,12px,24px,#000000)
+    &__left
+      margin-bottom: 52px
+
+
+
+@media (min-width: 1440px)
+  .basket
+    &__wrapper
+      column-gap: 36px
+

@@ -1,0 +1,39 @@
+@import "src/sass/base/mixins"
+
+.notification
+  width: 100%
+  padding: 34px
+  &__h2
+    @include text(100,25px,131%,#000)
+    margin-bottom: 21px
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+  &__del
+    cursor: pointer
+    @include text(100,13px,normal,#F00)
+    align-self: flex-end
+    margin-top: 29px
+  &__list
+    display: flex
+    flex-wrap: wrap
+    column-gap: 25px
+    row-gap: 25px
+  &__li
+    width: 174px
+    @include text(500,20px,131%,#000000)
+    border-radius: 30px
+    border: 1px solid rgba(0, 0, 0, 0.50)
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 10px 0
+    cursor: pointer
+    &_active
+      background: #1B68FF
+      color: #ffffff
+      border: none
+      cursor: pointer
+
+

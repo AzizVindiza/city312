@@ -1,8 +1,8 @@
-
+ 
 export const arr = [
     {
         name: "Моя карта",
-        img: "./img.png"
+        img: ""
     },
     {
         name: "Добавить банковскую карту",

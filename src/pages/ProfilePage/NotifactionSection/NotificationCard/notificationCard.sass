@@ -1,0 +1,35 @@
+@import "src/sass/base/mixins"
+.notificationCard
+  border-bottom: 1px solid #00000060
+  margin-top: 15px
+  display: flex
+  align-items: center
+  padding-bottom: 15px
+  justify-content: space-between
+  &__h2
+    @include text(500,15px,normal,#00000050)
+    margin-bottom: 10px
+  &__p
+    @include text(500,14px,normal,#313131)
+    width: 50%
+  &__right
+    cursor: pointer
+
+
+@media (min-width: 640px)
+
+
+@media (min-width: 768px)
+
+@media (min-width: 1024px)
+  .notificationCard
+    &__left
+      display: flex
+      column-gap: 18px
+    &__p
+      width: 100%
+
+@media (min-width: 1440px)
+
+
+

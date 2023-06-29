@@ -15,8 +15,6 @@ import Entry from "./pages/Entry/Entry";
 import RegisterPartner from "./pages/RegisterPartner/RegisterPartner";
 import RegisterUser from "./pages/RegisterUser/RegisterUser";
 import ChoosePage from "./pages/ChoosePage/ChoosePage";
-import SliderFrame from "./pages/FramePage/SliderFrame/SliderFrame";
-import WrapperSection from "./pages/FramePage/WrapperSection/WrapperSection";
 import FramePage from "./pages/FramePage/FramePage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import ClientsPage from "./pages/Home/ClientsPage/ClientsPage";
@@ -46,8 +44,6 @@ const router = createBrowserRouter(
             <Route path="profile/edit" element={<EditSection/>}/>
             <Route path="profile/bank" element={<BankSection/>}/>
             <Route path="profile/card" element={<BankCardSection/>}/>
-
-
         </Route>
     )
 );
