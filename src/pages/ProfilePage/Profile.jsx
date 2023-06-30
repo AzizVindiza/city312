@@ -1,8 +1,8 @@
 import React, {useContext} from 'react';
 import UserSection from "./UserSection/UserSection";
 import {CustomContext} from "../../Context";
- import BankCardSection from "./BankCardSection/BankCardSection";
- import BankSection from "./BankSection/BankSection";
+import BankCardSection from "./BankCardSection/BankCardSection";
+import BankSection from "./BankSection/BankSection";
 import "./profile.sass"
 import EditSection from "./EditSection/EditSection";
 import SettingsSection from "./SettingsSection/SettingsSection";
@@ -14,6 +14,8 @@ import Basket from "./BasketSection/Basket";
 import FavoritesCard from "./FavoritesSection/FavoritesCard/FavoritesCard";
 import FavoritesSection from "./FavoritesSection/FavoritesSection";
 import Notifaction from "./NotifactionSection/Notifaction";
+import NotificationComponent from "./NotificationComponent/NotificationComponent";
+import HistorySection from "./HistorySection/HistorySection";
 
 
 const Profile = () => {
@@ -22,8 +24,18 @@ const Profile = () => {
         <div className={'profile profile__container container'}>
             <UserSection/>
             {
-                category === "Моя карта" ? <BankSection/> : category === "Добавить банковскую карту" ?  <BankCardSection/> : category === "Настройки" ? <SettingsSection/> :
-                category === "Подписки" ? <SubscriptionSection/>   : category === "Комментарии" ? <CometSection/> : category === 'Лайки' ? <LikeSection/> :category === "Корзина" ? <Basket/> : category === 'Избранное' ? <FavoritesSection/> : category === "Уведомления" ? <Notifaction/> :  <EditSection/> }
+                category === "Моя карта" ? <BankSection/> :
+                    category === "Добавить банковскую карту" ? <BankCardSection/> :
+                        category === "Настройки" ? <SettingsSection/> :
+                            category === "Подписки" ? <SubscriptionSection/> :
+                                category === "Комментарии" ? <CometSection/> :
+                                    category === 'Лайки' ? <LikeSection/> :
+                                        category === "Корзина" ? <Basket/> :
+                                            category === 'Избранное' ? <FavoritesSection/> :
+                                                category === "Уведомления" ? <Notifaction/> :
+                                                    category === "История покупок" ? <HistorySection/> : <EditSection/>
+
+            }
         </div>
 
     );

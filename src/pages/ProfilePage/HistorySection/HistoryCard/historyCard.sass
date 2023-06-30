@@ -1,0 +1,39 @@
+@import "src/sass/base/mixins"
+.historyCard
+  &__block
+    display: flex
+    column-gap: 17px
+    margin-bottom: 35px
+  &__h2
+    @include text(700,15px,22px,#000000)
+  &__p
+    @include text(500,12px,20px,#000000)
+    opacity: 0.5
+  &__sell
+    @include text(100,15px,normal,#00000050)
+    margin-bottom: 4px
+  &__discount
+    @include text(100,11px,normal,#04CC46)
+  &__h3
+    @include text(100,21px,normal,#0077FF)
+    margin-bottom: 23px
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    margin-bottom: 16px
+
+  &__h4
+    @include text(100,16px,normal,#00000080)
+  &__h5
+    @include text(500,16px,normal,#00000080)
+    text-align: left
+
+  &__right
+    border-radius: 5px
+    border: 1.288px solid #FFF
+    background: #FFF
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15)
+    padding: 20px
+
+
+
