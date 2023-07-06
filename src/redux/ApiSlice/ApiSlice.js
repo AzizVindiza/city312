@@ -2,7 +2,7 @@ import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
 
 export const apiSlice = createApi({
     reducerPath: "apiSlice",
-    baseQuery: fetchBaseQuery({baseUrl: " https://card-76krx.ondigitalocean.app/"}),
+    baseQuery: fetchBaseQuery({baseUrl: "http://68.183.82.237:8000/"}),
     endpoints: (builder) => ({
         getCard: builder.query({
             query: () => "product/"
